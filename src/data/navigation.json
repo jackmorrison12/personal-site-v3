@@ -4,27 +4,23 @@
 		"link": "/"
 	},
 	{
-		"name": "About",
-		"link": "/about/"
-	},
-	{
-		"name": "CV",
-		"link": "/files/jack-cv.pdf"
+		"name": "Interactive CV",
+		"link": "/cv"
 	},
 	{
 		"name": "Experience",
-		"link": "/experience/"
+		"link": "/experience"
 	},
 	{
-		"name": "Transcript",
-		"link": "/transcript/"
+		"name": "Education",
+		"link": "/education"
 	},
 	{
 		"name": "Projects",
-		"link": "/projects/"
+		"link": "/projects"
 	},
 	{
-		"name": "Python Tutorial",
-		"link": "/python/"
+		"name": "Me",
+		"link": "/me"
 	}
 ]

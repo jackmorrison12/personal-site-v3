@@ -2,6 +2,9 @@ import React from "react";
 import "./index.css"
 
 import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+
+import data from "./data/navigation.json";
+
 import Home from "./components/home";
 import CV from "./components/cv";
 import Experience from "./components/experience";
@@ -11,26 +14,31 @@ import Me from "./components/me";
 
 export default function App() {
   
+  let pages = [Home, CV, Experience, Education, Projects, Me];
+
   return (
     <Router>
       <main>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/cv">Interactive CV</Link></li>
-            <li><Link to="/experience">Experience</Link></li>
-            <li><Link to="/education">Education</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/me">Me</Link></li>
+            {
+              data.map(item => {
+                return (
+                  <li><Link to={item.link}>{item.name}</Link></li>
+                );
+              }) 
+            }
           </ul>
         </nav>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/cv"  component={CV} />
-        <Route path="/experience"  component={Experience} />
-        <Route path="/education"  component={Education} />
-        <Route path="/projects"  component={Projects} />
-        <Route path="/me"  component={Me} />
+        {
+          data.map((item, i) => {
+            console.log(pages[i]);
+            return (
+              <Route path={item.link} exact component={pages[i]} />
+            );
+          }) 
+        }
         <Route render={() => <h1>404: page not found</h1>} />
       </Switch>
       </main>
