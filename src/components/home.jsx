@@ -9,7 +9,7 @@ import data from "../data/socials.json";
 import TextLoop from "react-text-loop";
 
 const Text = styled.div`
-  width: 2000px;
+  width: 100vw;
   text-align: center;
 `;
 
