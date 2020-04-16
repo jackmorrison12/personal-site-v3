@@ -1,7 +1,10 @@
-import React from "react";
-import "./index.css"
+import React, {Component} from "react";
+import "./styles/index.css"
 
-import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
+import GlobalStyle from './styles/global';
+
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import data from "./data/navigation.json";
 
@@ -12,42 +15,50 @@ import Education from "./components/education";
 import Projects from "./components/projects";
 import Me from "./components/me";
 
-export default function App() {
+class App extends Component {
   
-  let pages = [Home, CV, Experience, Education, Projects, Me];
+  state = {
+    navbarOpen: false
+  }
 
-  return (
-    <Router>
-      <main>
-        <nav>
-          <ul>
+  handleNavbar = () => {
+    this.setState({ navbarOpen: !this.state.navbarOpen });
+  }
+
+  render() {
+    const pages = [Home, CV, Experience, Education, Projects, Me];
+    return(
+      <>
+        <Navbar 
+              navbarState={this.state.navbarOpen} 
+              handleNavbar={this.handleNavbar}
+            />
+        <GlobalStyle />
+      
+      <Router>
+        <div class="main">
+          <Switch>
             {
-              data.map(item => {
+              data.map((item, i) => {
+                console.log(pages[i]);
                 return (
-                  <li><Link to={item.link}>{item.name}</Link></li>
+                  <Route path={item.link} exact component={pages[i]} />
                 );
               }) 
             }
-          </ul>
-        </nav>
-      <Switch>
-        {
-          data.map((item, i) => {
-            console.log(pages[i]);
-            return (
-              <Route path={item.link} exact component={pages[i]} />
-            );
-          }) 
-        }
 
-        {/* Temporary redirect whilst site is in beta 
-            Once out of beta, use this to automate deployment on git push 
-            https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
-            
-        <Route path="/personal-website" exact component= {Home} />
-        <Route render={() => <h1>404: page not found</h1>} />
-      </Switch>
-      </main>
-    </Router>
-  );
+            {/* Temporary redirect whilst site is in beta 
+                Once out of beta, use this to automate deployment on git push 
+                https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
+                
+            <Route path="/personal-website" exact component= {Home} />
+            <Route render={() => <h1>404: page not found</h1>} />
+          </Switch>
+        </div>
+      </Router>
+      </>
+    );
+  }
 }
+
+export default App
