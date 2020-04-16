@@ -5,4 +5,5 @@ This repo contains the code for my personal website, which is soon to be availab
 I am currently creating a new website which uses React.
 
 Sources:
-https://github.com/NunoCPNP/medium-youre-first-navbar
+- NavBar: https://github.com/NunoCPNP/medium-youre-first-navbar
+- Homepage background: https://codepen.io/saransh/pen/BKJun
