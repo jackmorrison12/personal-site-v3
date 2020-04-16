@@ -40,6 +40,9 @@ export default function App() {
           }) 
         }
         <Route render={() => <h1>404: page not found</h1>} />
+
+        {/* Temporary redirect whilst site is in beta */}
+        <Route path="/personal-website" exact component= {Home} />
       </Switch>
       </main>
     </Router>
