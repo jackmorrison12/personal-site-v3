@@ -17,3 +17,7 @@ code {
 .main {
   padding-top: 60px;
 }
+
+.active_nav {
+  color: #fdcb6e !important;
+}

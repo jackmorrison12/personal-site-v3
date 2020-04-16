@@ -10,7 +10,7 @@ import Title from "./components/navbar/title";
 import BurgerMenu from "./components/navbar/burgermenu";
 import CollapseMenu from "./components/navbar/collapsemenu";
 
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
 
 import data from "./data/navigation.json";
 
@@ -43,7 +43,7 @@ class App extends Component {
                 {
                   data.map(item => {
                     return (
-                      <a><Link to={item.link}>{item.name}</Link></a>
+                      <a><NavLink exact to={item.link} activeClassName="active_nav">{item.name} </NavLink></a>
                     );
                   }) 
                 }
