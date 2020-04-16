@@ -9,7 +9,7 @@ export default function Home() {
             <div id="stars3" />
             <div className="top-container flex">
                 <h1>
-                    Hello 👋 I'm Jack
+                    Hello <span role="img" aria-label="wave">👋</span> I'm Jack
                 </h1>
                 
             </div>
