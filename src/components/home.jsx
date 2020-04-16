@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import "../styles/index.scss"
 
+import data from "../data/socials.json";
+
 export default function Home() {
     return(
         <Fragment>
@@ -13,10 +15,14 @@ export default function Home() {
                 </h1>
                 I'm a Software Engineer
                 <span class="icons">
-                    <a href="https://github.com/jackmorrison12"><i class="fab fa-github fa-3x"></i></a>
-                    <a href="https://gitlab.doc.ic.ac.uk/jsm1317"><i class="fab fa-gitlab fa-3x"></i></a>
-                    <a href="https://twitter.com/jsm_ic"><i class="fab fa-twitter fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/jackmorrison12/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+
+                {
+                  data.map(item => {
+                    return item.home ? (<a href={item.url}><i class={`fab fa-${item.icon} fa-3x`}></i></a>) : null;  
+                    
+                  }) 
+                }
+
                 </span>
                 
             </div>

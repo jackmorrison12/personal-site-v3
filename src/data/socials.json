@@ -1,48 +1,32 @@
 [
 	{
 		"url": "mailto:jack1morrison@icloud.com",
-		"logo": "at",
-		"header": false,
-		"footer": true,
-		"name": "Email"
+		"icon": "at",
+		"home": false
 	},
 	{
 		"url": "sms:+447775101516",
-		"logo": "mobile",
-		"header": false,
-		"footer": true,
-		"name": "SMS"
+		"icon": "mobile",
+		"home": false
 	},
 	{
 		"url": "https://github.com/jackmorrison12",
-		"img_src": "/images/github-logo-white.png",
-		"logo": "github",
-		"header": true,
-		"footer": true,
-		"name": "GitHub"
+		"icon": "github",
+		"home": true
 	},
 	{
 		"url": "https://gitlab.doc.ic.ac.uk/jsm1317",
-		"img_src": "/images/gitlab-logo.png",
-		"logo": "gitlab",
-		"header": true,
-		"footer": true,
-		"name": "GitLab"
+		"icon": "gitlab",
+		"home": true
 	},
 	{
 		"url": "https://twitter.com/jsm_ic",
-		"img_src": "/images/twitter-logo.png",
-		"logo": "twitter",
-		"header": true,
-		"footer": true,
-		"name": "Twitter"
+		"icon": "twitter",
+		"home": true
 	},
 	{
 		"url": "https://www.linkedin.com/in/jackmorrison12/",
-		"img_src": "/images/linkedin-logo.png",
-		"logo": "linkedin",
-		"header": true,
-		"footer": true,
-		"name": "LinkedIn"
+		"icon": "linkedin-in",
+		"home": true
 	}
 ]
