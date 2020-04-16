@@ -1,7 +1,17 @@
 import React, { Fragment } from "react";
 import "../styles/index.scss"
 
+import styled from "styled-components";
+
+
 import data from "../data/socials.json";
+
+import TextLoop from "react-text-loop";
+
+const Text = styled.div`
+  width: 2000px;
+  text-align: center;
+`;
 
 export default function Home() {
     return(
@@ -13,7 +23,16 @@ export default function Home() {
                 <h1>
                     Hello, I'm Jack
                 </h1>
-                I'm a Software Engineer
+                <div class="loop">
+                    <TextLoop>
+                        <Text>Software Engineer</Text>
+                        <Text>Imperial Student</Text>
+                        <Text>Full Stack Developer</Text>
+                        <Text>Problem Solver</Text>
+                        <Text>Musician</Text>
+                        <Text>Skydiver</Text>
+                    </TextLoop>
+                </div>
                 <span class="icons">
 
                 {

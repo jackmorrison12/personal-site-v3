@@ -54,6 +54,10 @@ code {
   color: white;
 }
 
+.loop {
+  padding-top: 40px;
+}
+
 /* Mobile-specific classes */
 @media screen and (max-width: 481px){
 
