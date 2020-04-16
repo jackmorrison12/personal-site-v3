@@ -1,10 +1,16 @@
 import React, {Component} from "react";
 import "./styles/index.css"
 
-import Navbar from "./components/navbar/navbar";
+import styled from "styled-components";
+import { animated } from "react-spring";
+
 import GlobalStyle from './styles/global';
 
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Title from "./components/navbar/title";
+import BurgerMenu from "./components/navbar/burgermenu";
+import CollapseMenu from "./components/navbar/collapsemenu";
+
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 import data from "./data/navigation.json";
 
@@ -29,36 +35,110 @@ class App extends Component {
     const pages = [Home, CV, Experience, Education, Projects, Me];
     return(
       <>
-        <Navbar 
-              navbarState={this.state.navbarOpen} 
-              handleNavbar={this.handleNavbar}
-            />
-        <GlobalStyle />
-      
       <Router>
+        <NavBar>
+          <FlexContainer>
+            <Title />
+              <NavLinks>
+                {
+                  data.map(item => {
+                    return (
+                      <a><Link to={item.link}>{item.name}</Link></a>
+                    );
+                  }) 
+                }
+              </NavLinks>
+
+            <BurgerWrapper>
+              <BurgerMenu
+                navbarState={this.state.navbarOpen} 
+                handleNavbar={this.handleNavbar}
+              />
+            </BurgerWrapper>
+          </FlexContainer>
+        </NavBar> 
+        <CollapseMenu 
+          navbarState={this.state.navbarOpen} 
+          handleNavbar={this.handleNavbar}
+        />
         <div class="main">
           <Switch>
-            {
-              data.map((item, i) => {
-                console.log(pages[i]);
-                return (
-                  <Route path={item.link} exact component={pages[i]} />
-                );
-              }) 
-            }
+                {
+                  data.map((item, i) => {
+                    console.log(pages[i]);
+                    return (
+                      <Route path={item.link} exact component={pages[i]} />
+                    );
+                  }) 
+                }
 
-            {/* Temporary redirect whilst site is in beta 
-                Once out of beta, use this to automate deployment on git push 
-                https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
-                
-            <Route path="/personal-website" exact component= {Home} />
-            <Route render={() => <h1>404: page not found</h1>} />
+                {/* Temporary redirect whilst site is in beta 
+                    Once out of beta, use this to automate deployment on git push 
+                    https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
+                    
+                <Route path="/personal-website" exact component= {Home} />
+                <Route render={() => <h1>404: page not found</h1>} />
           </Switch>
         </div>
       </Router>
-      </>
+      <GlobalStyle />
+   </>
+   
     );
   }
 }
 
 export default App
+
+
+const NavBar = styled(animated.nav)`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 1;
+  font-size: 1.4rem;
+`;
+
+const FlexContainer = styled.div`
+  max-width: 120rem;
+  display: flex;
+  margin: auto;
+  padding: 0 2rem;;
+  justify-content: space-between;
+  height: 5rem;
+`;
+
+const NavLinks = styled(animated.ul)`
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 0;
+
+  & a {
+    color: #dfe6e9;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    margin: 0 1.5rem;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #fdcb6e;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+`;
+
+const BurgerWrapper = styled.div`
+  margin: auto 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
