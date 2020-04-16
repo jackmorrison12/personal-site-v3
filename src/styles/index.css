@@ -57,14 +57,14 @@ code {
 /* Mobile-specific classes */
 @media screen and (max-width: 481px){
 
-.top-container {
-  width: 100%;
-  letter-spacing: 0px;
-  font-size: 40px;
-}
+  .top-container {
+    width: 100%;
+    letter-spacing: 0px;
+    font-size: 40px;
+  }
 
-.icons {
-  font-size: 50px;
-}
+  .icons {
+    font-size: 50px;
+  }
 
 }
