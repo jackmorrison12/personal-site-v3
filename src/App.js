@@ -39,10 +39,13 @@ export default function App() {
             );
           }) 
         }
-        <Route render={() => <h1>404: page not found</h1>} />
 
-        {/* Temporary redirect whilst site is in beta */}
+        {/* Temporary redirect whilst site is in beta 
+            Once out of beta, use this to automate deployment on git push 
+            https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
+            
         <Route path="/personal-website" exact component= {Home} />
+        <Route render={() => <h1>404: page not found</h1>} />
       </Switch>
       </main>
     </Router>
