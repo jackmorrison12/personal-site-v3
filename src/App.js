@@ -43,6 +43,7 @@ class App extends Component {
                 {
                   data.map(item => {
                     return (
+                      // eslint-disable-next-line
                       <a><NavLink exact to={item.link} activeClassName="active_nav">{item.name} </NavLink></a>
                     );
                   }) 
