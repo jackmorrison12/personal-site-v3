@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Home",
+		"link": "/"
+	},
+	{
+		"name": "About",
+		"link": "/about/"
+	},
+	{
+		"name": "CV",
+		"link": "/files/jack-cv.pdf"
+	},
+	{
+		"name": "Experience",
+		"link": "/experience/"
+	},
+	{
+		"name": "Transcript",
+		"link": "/transcript/"
+	},
+	{
+		"name": "Projects",
+		"link": "/projects/"
+	},
+	{
+		"name": "Python Tutorial",
+		"link": "/python/"
+	}
+]
