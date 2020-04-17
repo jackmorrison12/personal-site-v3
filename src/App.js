@@ -92,7 +92,7 @@ export default App
 
 
 const NavBar = styled(animated.nav)`
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
