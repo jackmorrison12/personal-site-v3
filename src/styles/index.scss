@@ -137,6 +137,29 @@ code {
   padding: 2px;
 }
 
+/* Me Page CSS */ 
+
+.me-outer {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.me-left {
+  flex: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.me-right {
+  flex: 60%;
+  padding: 20px;
+}
+
+.me-avatar {
+  border-radius: 50%;
+}
+
 /* Mobile-specific classes */
 @media screen and (max-width: 481px){
 
@@ -153,6 +176,12 @@ code {
 
   /* Box CSS */
   .box {   
+    flex-direction: column;
+  }
+
+  /* Me CSS */ 
+
+  .me-outer {
     flex-direction: column;
   }
 
