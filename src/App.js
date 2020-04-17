@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./styles/index.css"
+import "./styles/index.scss"
 
 import styled from "styled-components";
 import { animated } from "react-spring";

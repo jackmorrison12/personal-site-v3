@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../styles/index.scss"
+import "../styles/home.scss"
 
 import styled from "styled-components";
 
