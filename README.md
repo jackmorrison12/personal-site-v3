@@ -1,6 +1,6 @@
 # My Personal Website
 
-This repo contains the code for my personal website, which is soon to be available at https://beta.jackmorrison.xyz.
+This repo contains the code for my personal website, which is available at https://jackmorrison.xyz/personal-website
 
 I am currently creating a new website which uses React.
 
