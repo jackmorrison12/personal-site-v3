@@ -1,19 +1,23 @@
 [
 	{
 		"name": "Imperial College London",
-		"colour": "5",
-		"desc": "I studied a Masters Degree in Computing",
+		"qualification": "MEng Computing",
 		"dates": "2017-2021",
-		"background": "https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/180216_queens_tower_lgbt_month_002--tojpeg_1545305547967_x2.jpg",
-		"offset": "center",
+		"desc": "Uni has been a great place for me to explore my love for Computing in more depth. If you'd have told me a few years ago the type of stuff I'd be doing now, well I mean I'd probably have believed you, since I've always enjoyed programming.",
+		"badges":["1st - First Year", "1st - Second Year", "1st - Third Year"],
+		"highlights":[
+			{
+				"name": "Models of Computation Exam",
+				"score": "First (97.2%)"
+			},
+			{
+				"name": "WACC Project",
+				"score": "First (96.4%)"
+			}
+		],
 		"commendations": [
 			{
 				"name": "Best Group Project on Medical Imaging",
-				"awarder": "Dr Konstantinos Gkoutzis",
-				"date": "March 2018"
-			},
-			{
-				"name": "Runner Up Topics Group Project (out of 66 groups)",
 				"awarder": "Dr Konstantinos Gkoutzis",
 				"date": "March 2018"
 			},
@@ -27,289 +31,65 @@
 				"awarder": "Dr Mark Wheelhouse",
 				"date": "June 2019"
 			}
-		],
-		"years": [
-			{
-				"year_no": "Third",
-				"overall": "First (Based on December Exams)",
-				"highlights": [
-					{
-						"name": "Robotics Exam",
-						"score": "First (80.4%)"
-					}
-				]
-			},
-			{
-				"year_no": "Second",
-				"overall": "First (79.3%)",
-				"highlights": [
-					{
-						"name": "Models of Computation Exam",
-						"score": "First (97.2%)"
-					},
-					{
-						"name": "Software Engineering Design Exam",
-						"score": "First (86.67%)"
-					},
-					{
-						"name": "Pintos Project",
-						"score": "First (88.3%)"
-					},
-					{
-						"name": "WACC Project",
-						"score": "First (96.4%)"
-					}
-				]
-			},
-			{
-				"year_no": "First",
-				"overall": "First (71.4%)",
-				"highlights": [
-					{
-						"name": "Haskell Interim Test",
-						"score": "First (80%)"
-					},
-					{
-						"name": "Haskell Final Test",
-						"score": "First (73%)"
-					},
-					{
-						"name": "Java Interim Test",
-						"score": "First (80%)"
-					},
-					{
-						"name": "Java Final Test",
-						"score": "First (76%)"
-					},
-					{
-						"name": "Computing Topics Project",
-						"score": "First (98%)"
-					},
-					{
-						"name": "C Project",
-						"score": "First (96%)"
-					}
-				]
-			}
 		]
 	},
 	{
 		"name": "Westcliff High School for Boys",
-		"colour": "3",
-		"desc": "I studied a A Levels in Mathematics, Further Mathematics, Computing and Physics",
+		"qualification" : "A Levels",
+		"desc": "I moved to WHSB because I wanted to study Computing at A Level and my old school didn't offer it. ",
 		"dates": "2015-2017",
-		"background": "https://www.whsb.essex.sch.uk/_site/data/files/images/slideshow/1/2E32CF64A1877B2970C2FD065348E94A.jpg",
-		"offset": "center",
-		"qualifications": [
+		"badges":["A* Maths", "A* Further Maths", "A* Computing", "A* Physics", "A EPQ"],
+		"commendations": [
 			{
-				"name": "A Levels",
-				"grades": [
-					{
-						"subject": "Mathematics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Further Mathematics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Physics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Computing",
-						"grade": "A*"
-					},
-					{
-						"subject": "EPQ",
-						"grade": "A"
-					}
-				]
-			},
-			{
-				"name": "AS Levels",
-				"grades": [
-					{
-						"subject": "Mathematics",
-						"grade": "A"
-					},
-					{
-						"subject": "Further Mathematics",
-						"grade": "A"
-					},
-					{
-						"subject": "Physics",
-						"grade": "A"
-					},
-					{
-						"subject": "Computing",
-						"grade": "A"
-					}
-				]
-			},
-			{
-				"name": "Other Qualifications",
-				"grades": [
-					{
-						"subject": "UKMT Senior Mathematics Challenge",
-						"grade": "Gold"
-					}
-				]
+				"name": "Bebras Challenge Finalist",
+				"awarder": "University of Oxford",
+				"date": 2016
 			}
 		],
-		"participation": [
-			"Prefect",
-			"Bebras Challenge",
-			"British Informatics Olympiad",
-			"Year 12 Computing Prefect",
-			"Open Evenings",
-			"Project Euler"
+		"highlights":[
+			{
+				"name": "UKMT Senior Mathematics Challenge",
+				"score": "Gold"
+			}, 
+			{
+				"name": "Prefect"
+			}
 		]
 	},
 	{
 		"name": "The Billericay School",
-		"colour": "1",
-		"desc": "I studied GCSEs",
+		"qualification" : "GCSEs",
+		"desc": "I studied GCSEs. They were... interesting lol.",
 		"dates": "2010-2015",
-		"background": "https://www.simmonds-ltd.com/pub/media/catalog/category/Billericay.jpg",
-		"offset": "center",
-		"qualifications": [
-			{
-				"name": "GCSEs",
-				"grades": [
-					{
-						"subject": "English Language",
-						"grade": "A"
-					},
-					{
-						"subject": "English Literature",
-						"grade": "B"
-					},
-					{
-						"subject": "Mathematics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Statistics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Biology",
-						"grade": "A"
-					},
-					{
-						"subject": "Chemistry",
-						"grade": "A*"
-					},
-					{
-						"subject": "Physics",
-						"grade": "A*"
-					},
-					{
-						"subject": "Business and Communication Systems",
-						"grade": "A"
-					},
-					{
-						"subject": "Computer Science",
-						"grade": "A*"
-					},
-					{
-						"subject": "German",
-						"grade": "A"
-					},
-					{
-						"subject": "History",
-						"grade": "A*"
-					},
-					{
-						"subject": "Religious Studies",
-						"grade": "A"
-					}
-				]
-			},
-			{
-				"name": "Other Qualifications",
-				"grades": [
-					{
-						"subject": "UKMT Junior Mathematics Challenge",
-						"grade": "Gold"
-					},
-					{
-						"subject": "UKMT Intermediate Mathematics Challenge",
-						"grade": "Gold, Best in Year"
-					},
-					{
-						"subject": "Duke of Edinburgh",
-						"grade": "Bronze Award"
-					},
-					{
-						"subject": "French ASSET Exam",
-						"grade": "Level 6"
-					},
-					{
-						"subject": "German ASSET Exam",
-						"grade": "Level 6"
-					},
-					{
-						"subject": "Mathematics Functional Skills",
-						"grade": "Level 2"
-					},
-					{
-						"subject": "Mathematics Proficiency in Number and Measure",
-						"grade": "Level 6"
-					}
-				]
-			}
-		],
-		"participation": [
-			"House Captain"
-		],
+		"badges":["A* x 6", "A x 5"],
 		"commendations": [
 			{
 				"name": "Outstanding Achievement Award",
+				"awarder": "Mrs Sue Hammond",
 				"date": 2011
 			},
 			{
-				"name": "Best in Year: Geography",
-				"date": 2012
-			},
-			{
-				"name": "Best in Year: Business and Communication Systems",
-				"date": 2014
-			},
-			{
-				"name": "Best in Year: Chemistry",
+				"name": "Best in Year:",
+				"awarder" : "UKMT Intermediate Mathematics Challenge",
 				"date": 2014
 			}
 		]
 	},
 	{
 		"name": "ABRSM",
+		"qualification" : "Music Exams",
 		"dates": "2012-2017",
-		"background": "https://abrsmwebprodmedia.blob.core.windows.net/umbracomedia-cache/6/b/5/5/c/4/6b55c4ffe878156dc8b55b9ace82e2d0dc4c5971.jpg",
-		"offset": "center",
-		"qualifications": [
+		"desc": "Outside of Computing, I also enjoy playing the piano. When I was younger, I used to take lessons towards earning my grades, which can be seen here, however since I've started uni, I now do it more in my free time. Im my third year, I took a course called 'Music Technology', where I got to learn about different ways of producing music, and got to revive some of my piano playing skills!",
+		"final":true,
+		"badges":["Grade 4 Piano"],
+		"commendations": [
 			{
-				"name": "Piano",
-				"grades": [
-					{
-						"subject": "Grade 1",
-						"grade": "Pass"
-					},
-					{
-						"subject": "Grade 2",
-						"grade": "Pass"
-					},
-					{
-						"subject": "Grade 3",
-						"grade": "Pass"
-					},
-					{
-						"subject": "Grade 4",
-						"grade": "Merit"
-					}
-				]
-			}
+				"name": "Grade 4 Pianoforte",
+				"awarder": "ABRSM",
+				"grade": "Merit"
+			} 
+		
+			
 		]
 	}
 ]
