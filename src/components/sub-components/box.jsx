@@ -11,10 +11,10 @@ class Box extends Component {
                         <Fade left>
                             <div>
                                 <a href={this.props.data.url} class="box-heading"><h1 class="box-heading">{this.props.data.name}</h1></a>
-                                <span class="box-subheading">{this.props.data.qualification} • </span>
+                                <span class="box-subheading">{this.props.data.subtitle} • </span>
                                 <span class="box-date">{this.props.data.dates}</span>
                                 <div class="box-badge-matrix">
-                                    {
+                                    { this.props.data.badges ?
                                         this.props.data.badges.map(badge => {
                                             return (
                                                 <div class="box-badge-wrapper">
@@ -24,6 +24,7 @@ class Box extends Component {
                                                 </div>
                                             );
                                         }) 
+                                        : ""
                                     }
                                 </div>
                             </div>
@@ -58,7 +59,7 @@ class Box extends Component {
                                         return(
                                             <div class="box-awards">
                                                 <i class="fas fa-star"></i> 
-                                                <span> {highlight.name} - <i>{highlight.score}</i></span>
+                                                <span> {highlight.name} {highlight.score ?  "-"  : ""} <i>{highlight.score}</i></span>
                                             </div>
                                         );
                                     })
