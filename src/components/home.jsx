@@ -27,10 +27,11 @@ export default function Home() {
                     <TextLoop>
                         <Text>Software Engineer</Text>
                         <Text>Imperial Student</Text>
+                        <Text>Skydiver</Text>
                         <Text>Full Stack Developer</Text>
+                        <Text>World Traveller</Text>
                         <Text>Problem Solver</Text>
                         <Text>Musician</Text>
-                        <Text>Skydiver</Text>
                     </TextLoop>
                 </div>
                 <span class="icons">
