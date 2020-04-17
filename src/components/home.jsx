@@ -21,7 +21,7 @@ export default function Home() {
             <div id="stars3" />
             <div className="top-container flex">
                 <h1>
-                    Hi, I'm Jack
+                    Hello, I'm Jack
                 </h1>
                 <div class="loop">
                     <TextLoop>
