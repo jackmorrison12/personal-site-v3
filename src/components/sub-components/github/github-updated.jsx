@@ -4,7 +4,7 @@ export const GitHubData = ({ userName }) => {
   const [ghData, updateGhData] = useState({});
   
   useEffect(() => {
-    fetch(`https://api.github.com/repos/${userName}/personal-website/stats/contributors`)
+    fetch(`https://api.github.com/repos/${userName}/personal-website`)
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -19,17 +19,19 @@ export const GitHubData = ({ userName }) => {
   
   const buildGitHubData = () => {
     const  { error } = ghData;
-    const commits = ghData[0]?.total;
+    const updated = ghData?.updated_at;
+
+    console.log(updated);
   
     if (error) {
       return <p>{error}</p>;
     }
   
-    if (!commits) {
+    if (!updated) {
       return <p>Loading</p>;
     }
   
-    return <span>{commits} commits</span>;
+    return <span>{new Date(updated).toLocaleString()}</span>;
   };
 
   return buildGitHubData();

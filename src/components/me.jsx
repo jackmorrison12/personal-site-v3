@@ -10,6 +10,7 @@ import {LastFmData as LastSong} from './sub-components/lastfm/lastfm-lastsong';
 import {LastFmData as TopSong} from './sub-components/lastfm/lastfm-topsong';
 
 import {GitHubData as Commits} from './sub-components/github/github-commits';
+import {GitHubData as Updated} from './sub-components/github/github-updated';
 
 import TextLoop from "react-text-loop";
 
@@ -87,7 +88,9 @@ export default function Me() {
                         </tr>
                         <tr>
                             <td class="me-table-title">Last Updated</td>
-                            <td class="me-table-data">tbc</td>
+                            <td class="me-table-data">
+                                <a href="https://www.last.fm/user/Jackmorrison12"><Updated userName={'jackmorrison12'} /></a>
+                            </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of stars</td>
