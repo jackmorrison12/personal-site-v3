@@ -5,8 +5,11 @@ import avatar from "../assets/images/avatar.jpg";
 import styled from "styled-components";
 
 import Age from "./sub-components/age"
-import {LastFmData as LastSong} from './sub-components/lastfm-lastsong';
-import {LastFmData as TopSong} from './sub-components/lastfm-topsong';
+
+import {LastFmData as LastSong} from './sub-components/lastfm/lastfm-lastsong';
+import {LastFmData as TopSong} from './sub-components/lastfm/lastfm-topsong';
+
+import {GitHubData as Commits} from './sub-components/github/github-commits';
 
 import TextLoop from "react-text-loop";
 
@@ -78,7 +81,9 @@ export default function Me() {
                     <table class="me-table">
                         <tr>
                             <td class="me-table-title">Number of commits</td>
-                            <td class="me-table-data">tbc</td>
+                            <td class="me-table-data">
+                                <a href="https://www.last.fm/user/Jackmorrison12"><Commits userName={'jackmorrison12'} /></a>
+                            </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Last Updated</td>
