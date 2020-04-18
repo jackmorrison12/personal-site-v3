@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {NavLink} from "react-router-dom";
+
 import data from "../../data/navigation.json";
 
 import { useSpring, animated } from 'react-spring';
@@ -21,7 +23,8 @@ const CollapseMenu = (props) => {
               {
                 data.map(item => {
                   return (
-                    <li><a href={item.link} onClick={props.handleNavbar}>{item.name}</a></li>
+                    <li><a><NavLink exact to={item.link} activeClassName="active_nav" onClick={props.handleNavbar}>{item.name} </NavLink></a></li>
+                    // <li><a href={item.link} onClick={props.handleNavbar}>{item.name}</a></li>
                   );
                 }) 
               }
@@ -55,6 +58,7 @@ const NavLinks = styled.ul`
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    border: none;
 
     &:hover {
       color: #fdcb6e;
