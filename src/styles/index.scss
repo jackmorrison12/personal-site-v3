@@ -160,6 +160,52 @@ code {
   border-radius: 50%;
 }
 
+.me-heading{
+  padding-top:10px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.me-subheading{
+  padding-top:60px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.me-about{
+  padding-top:10px;
+  font-size: 16px;
+}
+
+.me-table-header{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.me-table{
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.me-table td{
+  padding: 10px;
+}
+
+.me-table-title {
+  width: 65%;
+}
+
+.me-table-data {
+  width: 35%;
+  text-align: right;
+}
+
+tr:nth-child(even) {background-color: #090A0F59;}
+
+
+
 /* Mobile-specific classes */
 @media screen and (max-width: 481px){
 
@@ -177,12 +223,18 @@ code {
   /* Box CSS */
   .box {   
     flex-direction: column;
+    padding: 5px;
   }
 
   /* Me CSS */ 
 
   .me-outer {
     flex-direction: column;
+    padding: 5px;
+  }
+
+  .me-subheading {
+    padding-top: 30px;
   }
 
 }

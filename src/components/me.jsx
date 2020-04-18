@@ -10,52 +10,59 @@ import {LastFmData as TopSong} from './sub-components/lastfm-topsong';
 
 import TextLoop from "react-text-loop";
 
+import Fade from 'react-reveal/Fade';
+
 
 export default function Me() {
     return(
         <Fragment>
             <div class="me-outer">
                 <div class="me-left">
-                    <Image src={avatar} alt="Avatar" />
-                    <h1>Jack Morrison</h1>
-                    <TextLoop>
-                        <span>Software Engineer</span>
-                        <span>Imperial Student</span>
-                        <span>Skydiver</span>
-                        <span>Full Stack Developer</span>
-                        <span>World Traveller</span>
-                        <span>Problem Solver</span>
-                        <span>Musician</span>
-                    </TextLoop>
+                    <Fade left>
+                        <div>
+                                
+                            <Image src={avatar} alt="Avatar" />
+                            <h1 class="me-heading">JACK MORRISON</h1>
+                            <TextLoop>
+                                <Text>Software Engineer</Text>
+                                <Text>Imperial Student</Text>
+                                <Text>Skydiver</Text>
+                                <Text>Full Stack Developer</Text>
+                                <Text>World Traveller</Text>
+                                <Text>Problem Solver</Text>
+                                <Text>Musician</Text>
+                            </TextLoop>
 
-                    <h2>About Me</h2>
-                    <p>Hey, I'm Jack. I'm a Software Engineer from London, UK. I'm currently studying Computing at Imperial College London. Look around here to get to know a bit more about me!</p>
+                            <h2 class="me-subheading">ABOUT ME</h2>
+                            <p class="me-about">Hey, I'm Jack. I'm a Software Engineer from London, UK. I'm currently studying Computing at Imperial College London. Look around here to get to know a bit more about me!</p>
 
-                    Created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i>
+                            <p class="me-about">Site created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i></p>
 
-                    
-                    {/* Name: Jack Morrison
-                    Age:  */}
+                            
+                            {/* Name: Jack Morrison
+                            Age:  */}
+                        </div>
+                    </Fade>
                 </div>
                 <div class="me-right">
                     {/* Stats */}
-                    <h1>Some stats about me</h1>
-                    <table>
+                    <h1 class="me-table-header">SOME STATS ABOUT ME</h1>
+                    <table class="me-table">
                         <tr>
-                            <td>Years I've been alive</td>
-                            <td><Age></Age></td>
+                            <td class="me-table-title">Years I've been alive</td>
+                            <td class="me-table-data"><Age></Age></td>
                         </tr>
                         <tr>
-                            <td>Current Location</td>
-                            <td>London, UK</td>
+                            <td class="me-table-title">Current Location</td>
+                            <td class="me-table-data">London, UK</td>
                         </tr>
                         <tr>
-                            <td>Countries I've visited</td>
-                            <td></td>
+                            <td class="me-table-title">Countries I've visited</td>
+                            <td class="me-table-data"></td>
                         </tr>
                         <tr>
-                            <td>Last song I listened to</td>
-                            <td>
+                            <td class="me-table-title">Last song I listened to</td>
+                            <td class="me-table-data">
                                 <LastSong
                                     userName={'jackmorrison12'}
                                     apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
@@ -64,8 +71,8 @@ export default function Me() {
                             {/* https://medium.com/@samkitson/fetching-and-displaying-scrobbled-data-with-react-and-the-last-fm-api-28d048386da8 */}
                         </tr>
                         <tr>
-                            <td>Most listened to song of the week</td>
-                            <td>
+                            <td class="me-table-title">Most listened to song of the week</td>
+                            <td class="me-table-data">
                                 <TopSong
                                     userName={'jackmorrison12'}
                                     apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
@@ -74,29 +81,30 @@ export default function Me() {
                             {/* https://medium.com/@samkitson/fetching-and-displaying-scrobbled-data-with-react-and-the-last-fm-api-28d048386da8 */}
                         </tr>
                     </table>     
-                    <h1>Some stats about the site</h1>
-                    <table>
+                    <h1 class="me-table-header">SOME STATS ABOUT THE SITE</h1>
+                    <table class="me-table">
                         <tr>
-                            <td>Number of commits</td>
-                            <td></td>
+                            <td class="me-table-title">Number of commits</td>
+                            <td class="me-table-data">tbc</td>
                         </tr>
                         <tr>
-                            <td>Last Updated</td>
-                            <td></td>
+                            <td class="me-table-title">Last Updated</td>
+                            <td class="me-table-data">tbc</td>
                         </tr>
                         <tr>
-                            <td>Number of stars</td>
-                            <td></td>
+                            <td class="me-table-title">Number of stars</td>
+                            <td class="me-table-data">tbc</td>
                         </tr>
                         <tr>
-                            <td>Number of forks</td>
-                            <td></td>
+                            <td class="me-table-title">Number of forks</td>
+                            <td class="me-table-data">tbc</td>
                         </tr>
                         <tr>
-                            <td>Number of watchers</td>
-                            <td></td>
+                            <td class="me-table-title">Number of watchers</td>
+                            <td class="me-table-data">tbc</td>
                         </tr>
                     </table>    
+                    
 
                                  {/* https://api.github.com/repos/jackmorrison12/personal-website
                                  https://github.com/ziad-saab/react-github-api-project/blob/master/src/components/User.jsx */}
@@ -111,4 +119,9 @@ export default function Me() {
 const Image = styled.img`
     border-radius: 50%;
     width: 30%;
+`;
+
+const Text = styled.div`
+    padding-top:10px;
+    font-size: 20px;
 `;
