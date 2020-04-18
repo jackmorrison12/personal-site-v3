@@ -11,6 +11,9 @@ import {LastFmData as TopSong} from './sub-components/lastfm/lastfm-topsong';
 
 import {GitHubData as Commits} from './sub-components/github/github-commits';
 import {GitHubData as Updated} from './sub-components/github/github-updated';
+import {GitHubData as Stars} from './sub-components/github/github-stars';
+import {GitHubData as Forks} from './sub-components/github/github-forks';
+import {GitHubData as Watchers} from './sub-components/github/github-watchers';
 
 import TextLoop from "react-text-loop";
 
@@ -94,15 +97,21 @@ export default function Me() {
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of stars</td>
-                            <td class="me-table-data">tbc</td>
+                            <td class="me-table-data">
+                                <a href="https://www.last.fm/user/Jackmorrison12"><Stars userName={'jackmorrison12'} /></a>
+                            </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of forks</td>
-                            <td class="me-table-data">tbc</td>
+                            <td class="me-table-data">
+                                <a href="https://www.last.fm/user/Jackmorrison12"><Forks userName={'jackmorrison12'} /></a>
+                            </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of watchers</td>
-                            <td class="me-table-data">tbc</td>
+                            <td class="me-table-data">
+                                <a href="https://www.last.fm/user/Jackmorrison12"><Watchers userName={'jackmorrison12'} /></a>
+                            </td>
                         </tr>
                     </table>    
                     
