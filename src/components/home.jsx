@@ -40,7 +40,7 @@ export default function Home() {
 
                 {
                   data.map(item => {
-                    return item.home ? (<a href={item.url}><i class={`fab fa-${item.icon} fa-3x`}></i></a>) : null;  
+                    return item.home ? (<a href={item.url} class="icon"><i class={`fab fa-${item.icon} fa-3x`}></i></a>) : null;  
                     
                   }) 
                 }
