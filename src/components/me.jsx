@@ -86,31 +86,31 @@ export default function Me() {
                         <tr>
                             <td class="me-table-title">Number of commits</td>
                             <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><Commits userName={'jackmorrison12'} /></a>
+                                <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Commits userName={'jackmorrison12'} /></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Last Updated</td>
                             <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><Updated userName={'jackmorrison12'} /></a>
+                                <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Updated userName={'jackmorrison12'} /></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of stars</td>
                             <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><Stars userName={'jackmorrison12'} /></a>
+                                <a href="https://github.com/jackmorrison12/personal-website/stargazers"><Stars userName={'jackmorrison12'} /></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of forks</td>
                             <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><Forks userName={'jackmorrison12'} /></a>
+                                <a href="https://github.com/jackmorrison12/personal-website/network/members"><Forks userName={'jackmorrison12'} /></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Number of watchers</td>
                             <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><Watchers userName={'jackmorrison12'} /></a>
+                                <a href="https://github.com/jackmorrison12/personal-website/watchers"><Watchers userName={'jackmorrison12'} /></a>
                             </td>
                         </tr>
                     </table>    
