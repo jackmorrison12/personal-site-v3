@@ -64,15 +64,13 @@ export default function Me() {
                         <tr>
                             <td class="me-table-title">Last song I listened to</td>
                             <td class="me-table-data">
-                                <LastSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
-                                />
+                                <a href="https://www.last.fm/user/Jackmorrison12"><LastSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="me-table-title">Most listened to song of the week</td>
                             <td class="me-table-data">
-                                <TopSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
-                                />
+                                <a href="https://www.last.fm/user/Jackmorrison12"><TopSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
                             </td>
                         </tr>
                     </table>     

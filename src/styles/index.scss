@@ -17,6 +17,12 @@ code {
     monospace;
 }
 
+a {
+  color:white;
+  border-bottom: dotted 1px white;
+  text-decoration: none;
+}
+
 /* Home page CSS */
 .main {
   padding-top: 60px;
@@ -184,6 +190,7 @@ code {
 .me-table-header{
   font-size: 24px;
   letter-spacing: 3px;
+  padding-bottom: 30px;
 }
 
 .me-table{
