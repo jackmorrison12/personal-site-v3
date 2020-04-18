@@ -8,6 +8,8 @@ import data from "../data/socials.json";
 
 import TextLoop from "react-text-loop";
 
+import titles from "../data/titles.json"
+
 const Text = styled.div`
   width: 100vw;
   text-align: center;
@@ -25,13 +27,13 @@ export default function Home() {
                 </h1>
                 <div class="loop">
                     <TextLoop>
-                        <Text>Software Engineer</Text>
-                        <Text>Imperial Student</Text>
-                        <Text>Skydiver</Text>
-                        <Text>Full Stack Developer</Text>
-                        <Text>World Traveller</Text>
-                        <Text>Problem Solver</Text>
-                        <Text>Musician</Text>
+                        {
+                            titles.map(title => {
+                                return (
+                                    <Text>{title}</Text>
+                                );
+                            })
+                        }
                     </TextLoop>
                 </div>
                 <span class="icons">

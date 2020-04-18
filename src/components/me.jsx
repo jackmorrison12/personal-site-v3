@@ -12,6 +12,7 @@ import TextLoop from "react-text-loop";
 
 import Fade from 'react-reveal/Fade';
 
+import titles from "../data/titles.json"
 
 export default function Me() {
     return(
@@ -24,13 +25,13 @@ export default function Me() {
                             <Image src={avatar} alt="Avatar" />
                             <h1 class="me-heading">JACK MORRISON</h1>
                             <TextLoop>
-                                <Text>Software Engineer</Text>
-                                <Text>Imperial Student</Text>
-                                <Text>Skydiver</Text>
-                                <Text>Full Stack Developer</Text>
-                                <Text>World Traveller</Text>
-                                <Text>Problem Solver</Text>
-                                <Text>Musician</Text>
+                                {
+                                    titles.map(title => {
+                                        return (
+                                            <Text>{title}</Text>
+                                        );
+                                    })
+                                }
                             </TextLoop>
 
                             <h2 class="me-subheading">ABOUT ME</h2>
