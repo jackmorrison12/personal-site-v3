@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   render() {
-    const pages = [Home, CV, Experience, Education, Projects, Me];
+    const pages = [(props) => <Home {...props} navbarState={this.state.navbarOpen} />, CV, Experience, Education, Projects, Me];
     return(
       <>
       <Router>
@@ -61,13 +61,13 @@ class App extends Component {
           navbarState={this.state.navbarOpen} 
           handleNavbar={this.handleNavbar}
         />
-        <div class="main">
+        <div className="main">
           <Switch>
                 {
                   data.map((item, i) => {
                     console.log(pages[i]);
                     return (
-                      <Route path={item.link} exact component={pages[i]} />
+                      <Route path={item.link} exact render={pages[i]} />
                     );
                   }) 
                 }
