@@ -64,22 +64,16 @@ export default function Me() {
                         <tr>
                             <td class="me-table-title">Last song I listened to</td>
                             <td class="me-table-data">
-                                <LastSong
-                                    userName={'jackmorrison12'}
-                                    apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
+                                <LastSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
                                 />
                             </td>
-                            {/* https://medium.com/@samkitson/fetching-and-displaying-scrobbled-data-with-react-and-the-last-fm-api-28d048386da8 */}
                         </tr>
                         <tr>
                             <td class="me-table-title">Most listened to song of the week</td>
                             <td class="me-table-data">
-                                <TopSong
-                                    userName={'jackmorrison12'}
-                                    apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
+                                <TopSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}
                                 />
                             </td>
-                            {/* https://medium.com/@samkitson/fetching-and-displaying-scrobbled-data-with-react-and-the-last-fm-api-28d048386da8 */}
                         </tr>
                     </table>     
                     <h1 class="me-table-header">SOME STATS ABOUT THE SITE</h1>
