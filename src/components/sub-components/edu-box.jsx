@@ -70,9 +70,7 @@ class Box extends Component {
                         </Fade>
                     </div>
                     
-                </div>
-                {/* {this.props.data.final ? "" : <div class="box-line"></div>} */}
-                
+                </div>                
             </Fragment>
         );
     }

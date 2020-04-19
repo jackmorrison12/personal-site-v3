@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Box from "./sub-components/box";
+import Box from "./sub-components/exp-box";
 
 import data from "../data/experience.json";
 
