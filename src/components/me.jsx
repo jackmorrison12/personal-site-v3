@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
+import {NavLink} from "react-router-dom";
 
 import avatar from "../assets/images/avatar.jpg";
 
 import styled from "styled-components";
 
 import Age from "./sub-components/age"
+import {len} from "../data/visited";
 
 import {LastFmData as LastSong} from './sub-components/lastfm/lastfm-lastsong';
 import {LastFmData as TopSong} from './sub-components/lastfm/lastfm-topsong';
@@ -45,14 +47,11 @@ export default function Me() {
                             <p class="me-about">Hey, I'm Jack. I'm a Software Engineer from London, UK. I'm currently studying Computing at Imperial College London. Look around here to get to know a bit more about me!</p>
 
                             <p class="me-about me-footer">Site created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i></p>
-
-                            
-                            {/* Name: Jack Morrison
-                            Age:  */}
                         </div>
                     </Fade>
                 </div>
                 <div class="me-right">
+                    <Fade right><div>
                     {/* Stats */}
                     <h1 class="me-table-header">SOME STATS ABOUT ME</h1>
                     <table class="me-table">
@@ -62,11 +61,12 @@ export default function Me() {
                         </tr>
                         <tr>
                             <td class="me-table-title">Current Location</td>
-                            <td class="me-table-data">London, UK</td>
+                            <td class="me-table-data"><NavLink exact to="/map">London, UK</NavLink></td>
                         </tr>
                         <tr>
-                            <td class="me-table-title">Countries I've visited</td>
-                            <td class="me-table-data"></td>
+                            <td class="me-table-title">Cities I've visited</td>
+                            <td class="me-table-data"><NavLink exact to="/map">{len}</NavLink></td>
+
                         </tr>
                         <tr>
                             <td class="me-table-title">Last song I listened to</td>
@@ -119,8 +119,13 @@ export default function Me() {
                                  {/* https://api.github.com/repos/jackmorrison12/personal-website
                                  https://github.com/ziad-saab/react-github-api-project/blob/master/src/components/User.jsx */}
                     
+                    </div></Fade>
                 </div>
+                
             </div>
+
+              
+ 
 
         </Fragment>
     );

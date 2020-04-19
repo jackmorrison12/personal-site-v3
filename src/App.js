@@ -20,6 +20,7 @@ import Experience from "./components/experience";
 import Education from "./components/education";
 import Projects from "./components/projects";
 import Me from "./components/me";
+import Map from "./components/map";
 
 class App extends Component {
   
@@ -77,6 +78,7 @@ class App extends Component {
                     https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
                     
                 <Route path="/personal-website" exact component= {Home} />
+                <Route path="/map" exact component={Map} />
                 <Route render={() => <h1>404: page not found</h1>} />
           </Switch>
         </div>

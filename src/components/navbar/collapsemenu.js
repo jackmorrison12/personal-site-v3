@@ -24,7 +24,6 @@ const CollapseMenu = (props) => {
                 data.map(item => {
                   return (
                     <li><a><NavLink exact to={item.link} activeClassName="active_nav" onClick={props.handleNavbar}>{item.name} </NavLink></a></li>
-                    // <li><a href={item.link} onClick={props.handleNavbar}>{item.name}</a></li>
                   );
                 }) 
               }
