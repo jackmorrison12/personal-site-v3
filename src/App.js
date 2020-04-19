@@ -77,8 +77,8 @@ class App extends Component {
                     Once out of beta, use this to automate deployment on git push 
                     https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
                     
-                <Route path="/personal-website" exact component= {Home} />
-                <Route path="/map" exact render={(props) => <Home {...props} navbarState={this.state.navbarOpen} />} />
+                <Route path="/personal-website" exact render={(props) => <Home {...props} navbarState={this.state.navbarOpen} />} />
+                <Route path="/map" exact component={Map} />
                 <Route render={() => <h1>404: page not found</h1>} />
           </Switch>
         </div>

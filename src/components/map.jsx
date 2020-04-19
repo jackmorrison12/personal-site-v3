@@ -8,9 +8,6 @@ import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
 import {data} from "../data/visited";
 
-import Fade from 'react-reveal/Fade';
-
-
 class Map extends Component {
     componentDidMount() {
         let chart = am4core.create("chartdiv", am4charts.XYChart);
