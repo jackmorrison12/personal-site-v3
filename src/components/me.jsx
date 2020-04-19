@@ -51,75 +51,76 @@ export default function Me() {
                     </Fade>
                 </div>
                 <div class="me-right">
-                    <Fade right><div>
-                    {/* Stats */}
-                    <h1 class="me-table-header">SOME STATS ABOUT ME</h1>
-                    <table class="me-table">
-                        <tr>
-                            <td class="me-table-title">Years I've been alive</td>
-                            <td class="me-table-data"><Age></Age></td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Current Location</td>
-                            <td class="me-table-data"><NavLink exact to="/map">London, UK</NavLink></td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Cities I've visited</td>
-                            <td class="me-table-data"><NavLink exact to="/map">{len}</NavLink></td>
+                    <Fade right>
+                        <div>
+                            <h1 class="me-table-header">SOME STATS ABOUT ME</h1>
+                            <table class="me-table">
+                                <tr>
+                                    <td class="me-table-title">Years I've been alive</td>
+                                    <td class="me-table-data"><Age></Age></td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Current Location</td>
+                                    <td class="me-table-data"><NavLink exact to="/map">London, UK</NavLink></td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Cities I've visited</td>
+                                    <td class="me-table-data"><NavLink exact to="/map">{len}</NavLink></td>
 
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Last song I listened to</td>
-                            <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><LastSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Most listened to song of the week</td>
-                            <td class="me-table-data">
-                                <a href="https://www.last.fm/user/Jackmorrison12"><TopSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
-                            </td>
-                        </tr>
-                    </table>     
-                    <h1 class="me-table-header">SOME STATS ABOUT THE SITE</h1>
-                    <table class="me-table">
-                        <tr>
-                            <td class="me-table-title">Number of commits</td>
-                            <td class="me-table-data">
-                                <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Commits userName={'jackmorrison12'} /></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Last Updated</td>
-                            <td class="me-table-data">
-                                <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Updated userName={'jackmorrison12'} /></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Number of stars</td>
-                            <td class="me-table-data">
-                                <a href="https://github.com/jackmorrison12/personal-website/stargazers"><Stars userName={'jackmorrison12'} /></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Number of forks</td>
-                            <td class="me-table-data">
-                                <a href="https://github.com/jackmorrison12/personal-website/network/members"><Forks userName={'jackmorrison12'} /></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="me-table-title">Number of watchers</td>
-                            <td class="me-table-data">
-                                <a href="https://github.com/jackmorrison12/personal-website/watchers"><Watchers userName={'jackmorrison12'} /></a>
-                            </td>
-                        </tr>
-                    </table>    
-                    
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Last song I listened to</td>
+                                    <td class="me-table-data">
+                                        <a href="https://www.last.fm/user/Jackmorrison12"><LastSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Most listened to song of the week</td>
+                                    <td class="me-table-data">
+                                        <a href="https://www.last.fm/user/Jackmorrison12"><TopSong userName={'jackmorrison12'} apiKey={process.env.REACT_APP_LAST_FM_API_KEY}/></a>
+                                    </td>
+                                </tr>
+                            </table>     
+                            <h1 class="me-table-header">SOME STATS ABOUT THE SITE</h1>
+                            <table class="me-table">
+                                <tr>
+                                    <td class="me-table-title">Number of commits</td>
+                                    <td class="me-table-data">
+                                        <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Commits userName={'jackmorrison12'} /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Last Updated</td>
+                                    <td class="me-table-data">
+                                        <a href="https://github.com/jackmorrison12/personal-website/commits/master"><Updated userName={'jackmorrison12'} /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Number of stars</td>
+                                    <td class="me-table-data">
+                                        <a href="https://github.com/jackmorrison12/personal-website/stargazers"><Stars userName={'jackmorrison12'} /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Number of forks</td>
+                                    <td class="me-table-data">
+                                        <a href="https://github.com/jackmorrison12/personal-website/network/members"><Forks userName={'jackmorrison12'} /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="me-table-title">Number of watchers</td>
+                                    <td class="me-table-data">
+                                        <a href="https://github.com/jackmorrison12/personal-website/watchers"><Watchers userName={'jackmorrison12'} /></a>
+                                    </td>
+                                </tr>
+                            </table>    
+                            
 
-                                 {/* https://api.github.com/repos/jackmorrison12/personal-website
-                                 https://github.com/ziad-saab/react-github-api-project/blob/master/src/components/User.jsx */}
-                    
-                    </div></Fade>
+                                        {/* https://api.github.com/repos/jackmorrison12/personal-website
+                                        https://github.com/ziad-saab/react-github-api-project/blob/master/src/components/User.jsx */}
+                            
+                        </div>
+                    </Fade>
                 </div>
                 
             </div>
