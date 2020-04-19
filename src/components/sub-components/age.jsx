@@ -5,7 +5,7 @@ class Age extends React.Component {
       super(props);
       this.state = {
         time: new Date(),
-        bday: new Date(1999,2,3)
+        bday: new Date(1999, 2, 3, 9, 49) // Js counts months from 0, so 0=Jan, 11=Dec
       };
     }
     componentDidMount() {
