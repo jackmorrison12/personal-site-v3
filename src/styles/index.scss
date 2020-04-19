@@ -226,6 +226,43 @@ a {
   overflow: hidden;
 }
 
+/* Project Page CSS */
+
+.sidenav {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  left: 20px;
+  // background: darkslateblue;
+  overflow-x: hidden;
+  padding: 8px 0;
+  top: 60px;
+  // bottom: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  // color: #2196F3;
+  display: block;
+  border: none;
+}
+
+.sidenav a:hover {
+  color: $colour;
+}
+
+.content {
+  margin-left: 280px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 /* Mobile-specific classes for iPhone 5 and below */
 @media only screen 
@@ -297,6 +334,19 @@ and (min-width : 326px) {
 
   .me-footer{
     padding-top: 30px;
+  }
+
+  /* Projects Page CSS */
+  
+  .sidenav {
+    display: none;
+  }
+  .content {
+    margin-left: 0px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
 }
