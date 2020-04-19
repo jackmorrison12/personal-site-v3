@@ -237,7 +237,9 @@ a {
   overflow-x: hidden;
   padding: 8px 0;
   top: 60px;
-  // bottom: 20px;
+  bottom: 20px;
+  // border: white 1px solid;
+  // box-shadow: 0 0 20px #090a0f;
 }
 
 .sidenav a {
@@ -257,6 +259,11 @@ a {
   margin-left: 280px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+}
+
+.proj-icon{
+  font-size: 10px !important;
+  display: inline !important;
 }
 
 @media screen and (max-height: 450px) {
