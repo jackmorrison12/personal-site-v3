@@ -28,7 +28,7 @@ export default function Me() {
                 <div class="me-left">
                     <Fade left>
                         <div>
-                            <div class="me-mobile-header">
+                            <div class="show-mobile-only">
                                 <img src={avatar} alt="Avatar" className="me-avatar" />
                                 <h1 class="me-heading">JACK MORRISON</h1>
                                 <TextLoop>

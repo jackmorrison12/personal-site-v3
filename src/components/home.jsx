@@ -22,27 +22,34 @@ const Home = (props) =>  {
                 <h1>
                     Hello, I'm Jack
                 </h1>
-                <div class="loop">
-                    <TextLoop>
-                        {
-                            titles.map(title => {
-                                return (
-                                    <div className="home-titles">{title}</div>
-                                );
-                            })
-                        }
-                    </TextLoop>
+                <div className="home-subheading show-desktop-only">
+                    <p>Hey, I'm Jack. I'm a Software Engineer from London, UK. </p>
+                    <p>I'm currently studying Computing at Imperial College London. </p>
+                    <p>Look around here to get to know a bit more about me!</p>
                 </div>
-                <span class="icons">
+                <div className="show-mobile-only">
+                    <div class="loop">
+                        <TextLoop>
+                            {
+                                titles.map(title => {
+                                    return (
+                                        <div className="home-titles">{title}</div>
+                                    );
+                                })
+                            }
+                        </TextLoop>
+                    </div>
+                    <span class="icons">
 
-                {
-                    data.map(item => {
-                    return item.home ? (<a href={item.url} class="icon"><i class={`fab fa-${item.icon} fa-3x`}></i></a>) : null;  
-                    
-                    }) 
-                }
+                    {
+                        data.map(item => {
+                        return item.home ? (<a href={item.url} class="icon"><i class={`fab fa-${item.icon} fa-3x`}></i></a>) : null;  
+                        
+                        }) 
+                    }
 
-                </span>
+                    </span>
+                </div>
                 
             </div>
         </Fragment>

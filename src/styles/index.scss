@@ -37,6 +37,11 @@ a {
   text-align: center;
 }
 
+.home-subheading{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
 
 .hero {
   letter-spacing: 10px;
@@ -216,8 +221,12 @@ a {
 
 .me-table tr:nth-child(even) {background-color: #090A0F59;}
 
-.me-mobile-header {
+.show-mobile-only {
   display:none;
+}
+
+.show-desktop-only {
+  display:block;
 }
 
 /* Map CSS */ 
@@ -304,10 +313,13 @@ and (min-width : 326px) and (max-width: 481px) {
     padding-top: 30px;
   }
 
-  .me-mobile-header {
+  .show-mobile-only {
     display:block;
   }
 
+  .show-desktop-only {
+    display:none;
+  }
 }
 
 /* Nav Bar CSS */ 
