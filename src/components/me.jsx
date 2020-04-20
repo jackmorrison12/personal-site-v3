@@ -3,8 +3,6 @@ import {NavLink} from "react-router-dom";
 
 import avatar from "../assets/images/avatar.jpg";
 
-import styled from "styled-components";
-
 import Age from "./sub-components/age"
 import {len} from "../data/visited";
 
@@ -30,18 +28,19 @@ export default function Me() {
                 <div class="me-left">
                     <Fade left>
                         <div>
-                                
-                            <img src={avatar} alt="Avatar" className="me-avatar" />
-                            <h1 class="me-heading">JACK MORRISON</h1>
-                            <TextLoop>
-                                {
-                                    titles.map(title => {
-                                        return (
-                                            <div className="me-titles">{title}</div>
-                                        );
-                                    })
-                                }
-                            </TextLoop>
+                            <div class="me-mobile-header">
+                                <img src={avatar} alt="Avatar" className="me-avatar" />
+                                <h1 class="me-heading">JACK MORRISON</h1>
+                                <TextLoop>
+                                    {
+                                        titles.map(title => {
+                                            return (
+                                                <div className="me-titles">{title}</div>
+                                            );
+                                        })
+                                    }
+                                </TextLoop>
+                            </div>    
 
                             <h2 class="me-subheading">ABOUT ME</h2>
                             <p class="me-about">Hey, I'm Jack. I'm a Software Engineer from London, UK. I'm currently studying Computing at Imperial College London. Look around here to get to know a bit more about me!</p>

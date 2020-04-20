@@ -19,7 +19,7 @@ class Age extends React.Component {
     }
     tick() {
       this.setState({
-        time: ((new Date() - this.state.bday)/31556952000).toFixed(11).toLocaleString()
+        time: ((new Date() - this.state.bday)/31556952000).toFixed(8).toLocaleString()
       });
     }
     render() {

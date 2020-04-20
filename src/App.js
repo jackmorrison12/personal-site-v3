@@ -16,7 +16,7 @@ import Projects from "./components/projects";
 import Me from "./components/me";
 import Map from "./components/map";
 
-import Navbar from "./components/navbar/navbar"
+import Navbar from "./components/sub-components/navbar"
 
 class App extends Component {
   

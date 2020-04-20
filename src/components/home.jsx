@@ -10,10 +10,6 @@ import TextLoop from "react-text-loop";
 
 import titles from "../data/titles.json"
 
-const Text = styled.div`
-  width: 100vw;
-  text-align: center;
-`;
 
 const Home = (props) =>  {
 
@@ -31,7 +27,7 @@ const Home = (props) =>  {
                         {
                             titles.map(title => {
                                 return (
-                                    <Text>{title}</Text>
+                                    <div className="home-titles">{title}</div>
                                 );
                             })
                         }

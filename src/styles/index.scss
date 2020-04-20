@@ -32,6 +32,11 @@ a {
   color: $colour !important;
 }
 
+.home-titles {  
+  width: 100vw;
+  text-align: center;
+}
+
 
 .hero {
   letter-spacing: 10px;
@@ -211,6 +216,10 @@ a {
 
 .me-table tr:nth-child(even) {background-color: #090A0F59;}
 
+.me-mobile-header {
+  display:none;
+}
+
 /* Map CSS */ 
 
 #chartdiv {
@@ -221,47 +230,9 @@ a {
 
 /* Project Page CSS */
 
-.sidenav {
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  left: 20px;
-  // background: darkslateblue;
-  overflow-x: hidden;
-  padding: 8px 0;
-  top: 60px;
-  bottom: 20px;
-  // border: white 1px solid;
-  // box-shadow: 0 0 20px #090a0f;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  // color: #2196F3;
-  display: block;
-  border: none;
-}
-
-.sidenav a:hover {
-  color: $colour;
-}
-
-.content {
-  margin-left: 280px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
 .proj-icon{
   font-size: 10px !important;
   display: inline !important;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 /* Mobile-specific classes for iPhone 5 and below */
@@ -309,6 +280,7 @@ and (min-width : 326px) and (max-width: 481px) {
   .hero {
     width: 100%;
     letter-spacing: 0px;
+    justify-content: start;
   }
 
   /* Box CSS */
@@ -332,35 +304,27 @@ and (min-width : 326px) and (max-width: 481px) {
     padding-top: 30px;
   }
 
-  /* Projects Page CSS */
-  
-  .sidenav {
-    display: none;
-  }
-  .content {
-    margin-left: 0px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .me-mobile-header {
+    display:block;
   }
 
 }
 
-
+/* Nav Bar CSS */ 
 
 .nav {
   background-color: black;
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 220px;
+  width: 250px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
   justify-content: space-between;
   color: white;
+  text-align: center;
 
   .nav-brand {
     text-align: center;
@@ -374,9 +338,10 @@ and (min-width : 326px) and (max-width: 481px) {
     }
     a {
       color: white;
-      font-size: 1.8rem;
+      font-size: 30px;
       font-weight: 500;
       text-decoration: none;
+      border: none;
     }
   }
 
@@ -385,12 +350,13 @@ and (min-width : 326px) and (max-width: 481px) {
     flex-direction: column;
     padding-inline-start: 0;
     justify-content: center;
-    margin-left: 1rem;
+    font-size: 20px;
 
     a {
       color: white;
       margin-bottom: 2rem;
       text-decoration: none;
+      border: none;
     }
     a:hover {
       text-decoration: underline;
@@ -405,10 +371,30 @@ and (min-width : 326px) and (max-width: 481px) {
 
   .footer .btn {
     width: 100%;
+    
   }
 }
 
-.hamburgerBtn {
+.nav-socials {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-icon {
+  border: none;
+  padding: 5px;
+}
+
+.nav-titles {
+  text-align: center;
+  width: 200px;
+  padding-top:10px;
+  font-size: 20px;
+}
+
+.hamburgerBtn,
+.closeBtn{
   display: none;
   background-color: transparent;
   border: none;
@@ -420,12 +406,12 @@ and (min-width : 326px) and (max-width: 481px) {
 
 
 .layout {
-  margin-left: 220px;
+  margin-left: 250px;
   min-height: 100vh;
   padding-top: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 896px) {
   .nav {
     transform: translateX(-100vw);
     transition: transform 500ms;
@@ -434,7 +420,7 @@ and (min-width : 326px) and (max-width: 481px) {
       .nav-brand-img {
         display: none !important;
       }
-
+      
       .nav-brand-link {
         font-size: 2.4rem;
       }
@@ -445,7 +431,7 @@ and (min-width : 326px) and (max-width: 481px) {
 
       .nav-item {
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
 
         & > a {
           font-size: 1.8rem;
@@ -479,6 +465,7 @@ and (min-width : 326px) and (max-width: 481px) {
     z-index: 10;
     transform: translateX(0);
     padding-top: 10rem;
+    padding-bottom: 20rem;
   }
 
   .layout {
