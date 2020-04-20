@@ -16,13 +16,13 @@ const Text = styled.div`
 `;
 
 const Home = (props) =>  {
-    
+
     return(
         <Fragment>
             <div id="stars" />
             <div id="stars2" />
             <div id="stars3" />
-            {/* <div className={"top-container flex"}>
+            <div className={"hero"}>
                 <h1>
                     Hello, I'm Jack
                 </h1>
@@ -48,7 +48,7 @@ const Home = (props) =>  {
 
                 </span>
                 
-            </div> */}
+            </div>
         </Fragment>
     ); 
 
