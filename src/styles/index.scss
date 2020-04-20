@@ -25,7 +25,6 @@ a {
 
 /* Home page CSS */
 .main {
-  padding-top: 60px;
   min-height: 100vh;
 }
 
@@ -167,6 +166,12 @@ a {
 
 .me-avatar {
   border-radius: 50%;
+  width: 30%;
+}
+
+.me-titles {
+  padding-top:10px;
+  font-size: 20px;
 }
 
 .me-heading{
@@ -292,7 +297,7 @@ and (max-width : 325px) {
 
 /* Mobile-specific classes for iPhone 6 and above */
 @media only screen 
-and (min-width : 326px) {
+and (min-width : 326px) and (max-width: 481px) {
 
   .top-container{
     font-size: 40px;
@@ -309,6 +314,7 @@ and (min-width : 326px) {
 
   .main {
     padding-top: 25px;
+    padding-left: 0px;
   }
 
   /* Home page CSS */
@@ -356,4 +362,143 @@ and (min-width : 326px) {
     padding-right: 20px;
   }
 
+}
+
+
+
+.nav {
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  justify-content: space-between;
+  color: white;
+
+  .nav-brand {
+    text-align: center;
+
+    img {
+      height: 120px;
+      width: 120px;
+      display: block;
+      margin: 0 auto 2rem auto;
+      border-radius: 100%;
+    }
+    a {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    justify-content: center;
+    margin-left: 1rem;
+
+    a {
+      color: white;
+      margin-bottom: 2rem;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    border-color: white;
+    margin: 20px 0 5px 0;
+    width: 100%;
+  }
+
+  .footer .btn {
+    width: 100%;
+  }
+}
+
+.hamburgerBtn {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.hamburgerBtn:hover {
+  cursor: pointer;
+}
+
+
+.layout {
+  margin-left: 220px;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    transform: translateX(-100vw);
+    transition: transform 500ms;
+
+    .nav-brand {
+      .nav-brand-img {
+        display: none !important;
+      }
+
+      .nav-brand-link {
+        font-size: 2.4rem;
+      }
+    }
+
+    .nav-items {
+      align-items: center;
+
+      .nav-item {
+        display: block;
+        margin-bottom: 1rem;
+
+        & > a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .hamburgerBtn,
+  .closeBtn {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    display: inline-block;
+    z-index: 100;
+    color: white;
+  }
+
+  .closeBtn > svg {
+    color: white;
+  }
+
+  .nav.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.98;
+    width: 100%;
+    z-index: 10;
+    transform: translateX(0);
+    padding-top: 10rem;
+  }
+
+  .layout {
+    margin-left: 0;
+  }
 }

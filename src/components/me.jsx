@@ -31,13 +31,13 @@ export default function Me() {
                     <Fade left>
                         <div>
                                 
-                            <Image src={avatar} alt="Avatar" />
+                            <img src={avatar} alt="Avatar" className="me-avatar" />
                             <h1 class="me-heading">JACK MORRISON</h1>
                             <TextLoop>
                                 {
                                     titles.map(title => {
                                         return (
-                                            <Text>{title}</Text>
+                                            <div className="me-titles">{title}</div>
                                         );
                                     })
                                 }
@@ -131,13 +131,3 @@ export default function Me() {
         </Fragment>
     );
 }
-
-const Image = styled.img`
-    border-radius: 50%;
-    width: 30%;
-`;
-
-const Text = styled.div`
-    padding-top:10px;
-    font-size: 20px;
-`;

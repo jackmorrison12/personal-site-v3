@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 export default function Projects() {
     return(
         <Fragment>
-            <div class="sidenav">
+            {/* <div class="sidenav">
 
                 {
                     projects.map((project) => {
@@ -36,7 +36,7 @@ export default function Projects() {
 
             </div>
         <div class="content">
-        </div>
+        </div> */}
         </Fragment>
     );
 }
