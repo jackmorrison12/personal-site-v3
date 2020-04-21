@@ -236,87 +236,17 @@ a {
 
 /* Project Page CSS */
 
-.proj-icon{
-  font-size: 10px !important;
-  display: inline !important;
+.project {
+  padding: 30px;
+  margin: 20px;
+  margin-left: 100px;  
+  margin-right: 100px;
+  text-align: left;
 }
 
-/* Mobile-specific classes for iPhone 5 and below */
-@media only screen 
-and (max-width : 325px) {
-
-  .hero{
-    font-size: 20px;
-  }
-
-  .icons {
-    font-size: 30px;
-  }
-
-  .icons svg {
-    padding: 0px;
-    padding-top: 30px;
-  }
-
-} 
-
-/* Mobile-specific classes for iPhone 6 and above */
-@media only screen 
-and (min-width : 326px) and (max-width: 481px) {
-
-  .hero{
-    font-size: 40px;
-  }
-
-  .icons {
-    font-size: 50px;
-  }
-
-} 
-
-/* Mobile-specific classes */
-@media screen and (max-width: 481px){
-
-  .main {
-    padding-top: 25px;
-    padding-left: 0px;
-  }
-
-  /* Home page CSS */
-  .hero {
-    width: 100%;
-    letter-spacing: 0px;
-    justify-content: start;
-  }
-
-  /* Box CSS */
-  .box {   
-    flex-direction: column;
-    padding: 5px;
-  }
-
-  /* Me CSS */ 
-
-  .me-outer {
-    flex-direction: column;
-    padding: 5px;
-  }
-
-  .me-subheading {
-    padding-top: 30px;
-  }
-
-  .me-footer{
-    padding-top: 30px;
-  }
-
-  .show-mobile-only {
-    display:block;
-  }
-
-  .show-desktop-only {
-    display:none;
-  }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Nav Bar CSS */ 
@@ -417,6 +347,8 @@ and (min-width : 326px) and (max-width: 481px) {
   padding-top: 2rem;
 }
 
+/* Nav Bar Mobile Specific CSS */ 
+
 @media only screen and (max-width: 896px) {
   .nav {
     transform: translateX(-100vw);
@@ -477,6 +409,96 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 }
 
+/* Mobile-specific classes for iPhone 5 and below */
+@media only screen 
+and (max-width : 325px) {
+
+  .hero{
+    font-size: 20px;
+  }
+
+  .icons {
+    font-size: 30px;
+  }
+
+  .icons svg {
+    padding: 0px;
+    padding-top: 30px;
+  }
+
+} 
+
+/* Mobile-specific classes for iPhone 6 and above */
+@media only screen 
+and (min-width : 326px) and (max-width: 481px) {
+
+  .hero{
+    font-size: 40px;
+  }
+
+  .icons {
+    font-size: 50px;
+  }
+
+} 
+
+/* Mobile-specific classes */
+@media screen and (max-width: 481px){
+
+  .main {
+    padding-top: 25px;
+    padding-left: 0px;
+  }
+
+  /* Home page CSS */
+  .hero {
+    width: 100%;
+    letter-spacing: 0px;
+    justify-content: start;
+  }
+
+  /* Box CSS */
+  .box {   
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  /* Me CSS */ 
+
+  .me-outer {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .me-subheading {
+    padding-top: 30px;
+  }
+
+  .me-footer{
+    padding-top: 30px;
+  }
+
+  .show-mobile-only {
+    display:block;
+  }
+
+  .show-desktop-only {
+    display:none;
+  }
+
+  /* Project Page CSS */
+
+  .project{
+    margin-left: 10px;  
+    margin-right: 10px;
+  }
+}
+
+
+
+
+/* Light Mode CSS */
+
 @media (prefers-color-scheme: light) {
   .nav {
     background-color: $light_secondary;
@@ -517,6 +539,8 @@ and (min-width : 326px) and (max-width: 481px) {
   }
   
 } 
+
+/* Dark Mode CSS */
 
 @media (prefers-color-scheme: dark) {
   
@@ -559,18 +583,4 @@ and (min-width : 326px) and (max-width: 481px) {
     background-color: $dark_secondary;
   }
 
-}
-
-
-.project {
-  padding: 30px;
-  margin: 20px;
-  margin-left: 100px;  
-  margin-right: 100px;
-  text-align: left;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
 }
