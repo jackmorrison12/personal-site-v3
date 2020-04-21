@@ -4,7 +4,7 @@ import "./styles/index.scss"
 import GlobalStyle from './styles/global';
 
 
-import { BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, NavLink, Redirect} from "react-router-dom";
 
 import data from "./data/navigation.json";
 
@@ -50,7 +50,15 @@ class App extends Component {
                     https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
                     
                 <Route path="/personal-website" exact render={(props) => <Home {...props} navbarState={this.state.navbarOpen} />} />
+
+                {/* Pages which are not in the nav bar (should eventually be exported to another js file and imported) */}
+
                 <Route path="/map" exact component={Map} />
+                
+                {/* Redirects from old site */}
+                <Route path="/about"><Redirect to="/me"/></Route>
+
+                {/* 404 Redirect for everything else  */}
                 <Route render={() => <h1>404: page not found</h1>} />
           </Switch>
         </div>
