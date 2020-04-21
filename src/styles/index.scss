@@ -1,4 +1,9 @@
+$dark_primary: #1B2735;
+$dark_secondary: #202124;
 $dark_accent: #fdcb6e;
+
+$light_primary: #a7d3ff;
+$light_secondary: #F1F3F4;
 $light_accent: white;
 $light_accent2: #6db6ff;
 
@@ -474,12 +479,12 @@ and (min-width : 326px) and (max-width: 481px) {
 
 @media (prefers-color-scheme: light) {
   .nav {
-    background-color: #F1F3F4;
+    background-color: $light_secondary;
   }
 
   body {
     color:black;
-    background-color: #a7d3ff;
+    background-color: $light_primary;
   }
 
   a {
@@ -506,18 +511,22 @@ and (min-width : 326px) and (max-width: 481px) {
   .closeBtn > svg {
     color: $light_accent2;
   }
+
+  .project {
+    background-color: $light_secondary;
+  }
   
 } 
 
 @media (prefers-color-scheme: dark) {
   
   .nav {
-    background-color: #202124;
+    background-color: $dark_secondary;
   }
 
   body {
     color: white;
-    background-color: #1B2735;
+    background-color: $dark_primary;
   }
 
   a {
@@ -546,4 +555,22 @@ and (min-width : 326px) and (max-width: 481px) {
     color: white;
   }
 
+  .project {
+    background-color: $dark_secondary;
+  }
+
+}
+
+
+.project {
+  padding: 30px;
+  margin: 20px;
+  margin-left: 100px;  
+  margin-right: 100px;
+  text-align: left;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
