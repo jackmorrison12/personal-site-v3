@@ -1,4 +1,6 @@
-$colour: #fdcb6e;
+$dark_accent: #fdcb6e;
+$light_accent: white;
+$light_accent2: #6db6ff;
 
 body {
   margin: 0;
@@ -7,8 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: white;
+  // background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   background-color: #1B2735;
 }
 
@@ -18,8 +19,6 @@ code {
 }
 
 a {
-  color:white;
-  border-bottom: dotted 1px white;
   text-decoration: none;
 }
 
@@ -28,9 +27,6 @@ a {
   min-height: 100vh;
 }
 
-.active_nav {
-  color: $colour !important;
-}
 
 .home-titles {  
   width: 100vw;
@@ -57,7 +53,6 @@ a {
 .icons svg{
   padding: 20px;
   padding-top: 50px;
-  color: white;
 }
 
 .icon {
@@ -114,14 +109,11 @@ a {
   padding-left: 10px;
   text-align: center;
   font-size: 12px;
-  color: $colour;
-  border-color: $colour;
 }
 
 .box-heading {
   font-size: 30px;
   padding-bottom: 5px;
-  color: $colour;
   text-decoration: none;
 }
 
@@ -325,7 +317,7 @@ and (min-width : 326px) and (max-width: 481px) {
 /* Nav Bar CSS */ 
 
 .nav {
-  background-color: #090A0F;
+  background-color: #202124;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -335,7 +327,6 @@ and (min-width : 326px) and (max-width: 481px) {
   flex-direction: column;
   padding: 40px 20px;
   justify-content: space-between;
-  color: white;
   text-align: center;
 
   .nav-brand {
@@ -349,7 +340,6 @@ and (min-width : 326px) and (max-width: 481px) {
       border-radius: 100%;
     }
     a {
-      color: white;
       font-size: 30px;
       font-weight: 500;
       text-decoration: none;
@@ -365,7 +355,6 @@ and (min-width : 326px) and (max-width: 481px) {
     font-size: 20px;
 
     a {
-      color: white;
       margin-bottom: 2rem;
       text-decoration: none;
       border: none;
@@ -462,9 +451,7 @@ and (min-width : 326px) and (max-width: 481px) {
     color: white;
   }
 
-  .closeBtn > svg {
-    color: white;
-  }
+
 
   .nav.open {
     position: fixed;
@@ -483,4 +470,80 @@ and (min-width : 326px) and (max-width: 481px) {
   .layout {
     margin-left: 0;
   }
+}
+
+@media (prefers-color-scheme: light) {
+  .nav {
+    background-color: #F1F3F4;
+  }
+
+  body {
+    color:black;
+    background-color: #a7d3ff;
+  }
+
+  a {
+    color:black;
+    border-bottom: dotted 1px black;
+  }
+  .icons svg {
+    color: black;
+  }
+
+  .active_nav {
+    color: $light_accent2 !important;
+  }
+
+  .box-badge {
+    color: $light_accent;
+    border-color: $light_accent;
+  }
+
+  .box-heading {
+    color: $light_accent;
+  }
+
+  .closeBtn > svg {
+    color: $light_accent2;
+  }
+  
+} 
+
+@media (prefers-color-scheme: dark) {
+  
+  .nav {
+    background-color: #202124;
+  }
+
+  body {
+    color: white;
+    background-color: #1B2735;
+  }
+
+  a {
+    color:white;
+    border-bottom: dotted 1px white;
+  }
+  
+  .icons svg {
+    color: white;
+  }
+
+  .active_nav {
+    color: $dark_accent !important;
+  }
+
+  .box-badge {
+    color: $dark_accent;
+    border-color: $dark_accent;
+  }
+
+  .box-heading {
+    color: $dark_accent;
+  }
+
+  .closeBtn > svg {
+    color: white;
+  }
+
 }
