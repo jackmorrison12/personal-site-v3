@@ -227,6 +227,11 @@ const data = [{
   "latitude": 43.7102,
   "longitude": 7.2620,
   "color":colorSet.next()
+}, {
+  "title": "Menorca",
+  "latitude": 39.9496,
+  "longitude": 4.1104,
+  "color":colorSet.next()
 }]
 
 let len = data.length;
