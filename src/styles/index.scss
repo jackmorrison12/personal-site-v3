@@ -249,6 +249,14 @@ a {
   flex-wrap: wrap;
 }
 
+.project-collapsed {
+  display:none;
+}
+
+.project-expanded {
+  display: block;
+}
+
 /* Nav Bar CSS */ 
 
 .nav {
