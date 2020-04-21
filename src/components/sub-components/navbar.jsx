@@ -44,9 +44,11 @@ export default function Navbar() {
             alt="Jack Morrison headshot"
             className="nav-brand-img"
           />
-          <NavLink to="/" className="nav-brand-link" onClick={() => {if (navOpen) setNavOpen(!navOpen)}}>
-            JACK MORRISON
-          </NavLink>
+          <div>
+            <NavLink to="/" className="nav-brand-link" onClick={() => {if (navOpen) setNavOpen(!navOpen)}}>
+              JACK MORRISON
+            </NavLink>
+          </div>
           <TextLoop>
               {
                   titles.map(title => {
