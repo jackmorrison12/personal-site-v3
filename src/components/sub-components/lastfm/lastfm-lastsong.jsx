@@ -21,7 +21,7 @@ export const LastFmData = ({ userName, apiKey }) => {
     const  { error } = lfmData;
     const track = lfmData?.response?.last_song;
     if (error || !lfmData?.success) {
-      return <p>{error}</p>;
+      return <p>Loading...</p>;
     }
   
     if (!track) {

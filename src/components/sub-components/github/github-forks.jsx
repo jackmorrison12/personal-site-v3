@@ -4,7 +4,7 @@ export const GitHubData = ({ userName }) => {
   const [ghData, updateGhData] = useState({});
   
   useEffect(() => {
-    fetch(`https://api.github.com/repos/${userName}/personal-website`)
+    fetch(`https://jackmorrison.herokuapp.com/github`)
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -19,19 +19,19 @@ export const GitHubData = ({ userName }) => {
   
   const buildGitHubData = () => {
     const  { error } = ghData;
-    const forks = ghData?.forks;
+    const resp = ghData?.response?.forks;
 
-    console.log(forks);
-  
-    if (error) {
-      return <p>{error}</p>;
+
+    if (error || !ghData?.success) {
+      return <p>Loading...</p>;
     }
   
-    if (forks == undefined) {
-      return <p>Loading</p>;
+    if (resp === undefined) {
+      return <p>Github API Unavailable</p>;
     }
-  
-    return <span>{forks}</span>;
+    console.log(resp);
+    return <span>{resp}</span>;
+
   };
 
   return buildGitHubData();
