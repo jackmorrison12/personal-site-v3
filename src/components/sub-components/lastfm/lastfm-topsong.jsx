@@ -4,7 +4,7 @@ export const LastFmData = ({ userName, apiKey }) => {
   const [lfmData, updateLfmData] = useState({});
   
   useEffect(() => {
-    fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${userName}&api_key=${apiKey}&period=7day&limit=1&format=json`)
+    fetch(`https://jackmorrison.herokuapp.com/lastfm`)
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -19,17 +19,18 @@ export const LastFmData = ({ userName, apiKey }) => {
   
   const buildLastFmData = () => {
     const  { error } = lfmData;
-    const songName = lfmData?.toptracks?.track[0].name;
-    const artistName = lfmData?.toptracks?.track[0].artist.name;
-    // console.log(track)
-    if (error) {
+    const track = lfmData?.response?.top_song;
+    if (error || !lfmData?.success) {
       return <p>{error}</p>;
     }
   
-    if (!songName) {
+    if (!track) {
       return <p>Loading</p>;
     }
   
+    const songName = track.name;
+    const artistName = track.artist;
+
     return <span>{songName} by {artistName}</span>;
   };
 
