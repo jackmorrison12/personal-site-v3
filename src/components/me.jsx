@@ -45,7 +45,8 @@ export default function Me() {
                             <h2 class="me-subheading">ABOUT ME</h2>
                             <p class="me-about">Hey, I'm Jack. I'm a Software Engineer from London, UK. I'm currently studying Computing at Imperial College London. Look around here to get to know a bit more about me!</p>
 
-                            <p class="me-about me-footer">Site created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i></p>
+                            <a href="https://github.com/jackmorrison12/personal-website"><p class="me-about me-footer">Site created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i></p></a>
+                            
                         </div>
                     </Fade>
                 </div>
