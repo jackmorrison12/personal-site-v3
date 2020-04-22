@@ -239,14 +239,27 @@ a {
 .project {
   padding: 30px;
   margin: 20px;
-  margin-left: 100px;  
-  margin-right: 100px;
+  margin-left: 2%;  
+  margin-right: 2%;
   text-align: left;
 }
+
+.project-small{
+  width: 46%;
+}
+
+.project-large{
+  width: 100%;
+}
+
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .project-collapsed {
@@ -499,6 +512,10 @@ and (min-width : 326px) and (max-width: 481px) {
   .project{
     margin-left: 10px;  
     margin-right: 10px;
+  }
+
+  .project-small{
+    width: 100%;
   }
 }
 
