@@ -8,7 +8,7 @@ class Box extends Component {
             <Fragment>
                 <div class="box">
                     <div class="box-left">
-                        <Fade left>
+                        {/* <Fade left> */}
                             <div>
                                 <a href={this.props.data.url} class="box-heading"><h1 class="box-heading">{this.props.data.name}</h1></a>
                                 <span class="box-subheading">{this.props.data.subtitle} • </span>
@@ -28,10 +28,10 @@ class Box extends Component {
                                     }
                                 </div>
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                     <div class="box-right">
-                        <Fade right>
+                        {/* <Fade right> */}
                             <div>
                                 <div class="box-description">
                                     {
@@ -67,7 +67,7 @@ class Box extends Component {
                                 : ""
                                 }
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                     
                 </div>                

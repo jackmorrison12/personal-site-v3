@@ -26,7 +26,7 @@ export default function Me() {
         <Fragment>
             <div class="me-outer">
                 <div class="me-left">
-                    <Fade left>
+                    {/* <Fade left> */}
                         <div>
                             <div class="show-mobile-only">
                                 <img src={avatar} alt="Avatar" className="me-avatar" />
@@ -48,10 +48,10 @@ export default function Me() {
                             <a href="https://github.com/jackmorrison12/personal-website"><p class="me-about me-footer">Site created with <i class="fas fa-heart"></i> using <i class="fab fa-react"></i></p></a>
                             
                         </div>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
                 <div class="me-right">
-                    <Fade right>
+                    {/* <Fade right> */}
                         <div>
                             <h1 class="me-table-header">SOME STATS ABOUT ME</h1>
                             <table class="me-table">
@@ -120,7 +120,7 @@ export default function Me() {
                                         https://github.com/ziad-saab/react-github-api-project/blob/master/src/components/User.jsx */}
                             
                         </div>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
                 
             </div>

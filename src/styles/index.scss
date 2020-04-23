@@ -270,6 +270,29 @@ a {
   display: block;
 }
 
+.project-badge-matrix {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  float:right;
+  width: 50%;
+}
+
+.project-header {
+  font-size: 24px;
+  font-weight: normal;
+}
+.project-subheader {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.project-short-desc {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+
 /* Nav Bar CSS */ 
 
 .nav {

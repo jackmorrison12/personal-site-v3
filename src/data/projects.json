@@ -2,12 +2,12 @@
 	{
 		"name": "PyPlay",
 		"type": "Hackathon",
-		"tech" : ["Python", "Heroku", "Bootstrap", "HTML5"],
+		"tech" : ["Python", "Heroku", "HTML5"],
 		"banner": "https://images.squarespace-cdn.com/content/55ed941ee4b0fe005b38b95d/1503770964368-MDMOLHC22MDRVHIU6EPS/monzocard.jpg?format=1500w&content-type=image%2Fjpeg",
 		"url": "pyplay",
 		"dates": "February 2020",
-		"short_desc": "An app created for IC Hack 2020, to teach young coders the basics of Python",
-		"long_desc": "Creativity, Curiosity, Coding! Those are our three C's, our core values here at PyPlay. We wanted to create an application to teach young coders the basics of Python. We want to provide an easy-to-use interface, where kids can write code, and visually see their code come to life. Unlike other platforms, where you drag-and-drop blocks, with PyPlay, you're actually writing real Python code! We created this for IC Hack 2020. ",
+		"short_desc": "An app to teach young coders the basics of Python",
+		"long_desc": "Creativity, Curiosity, Coding! Those are our three C's, our core values here at PyPlay. We wanted to create an application to teach young coders the basics of Python. We want to provide an easy-to-use interface, where kids can write code, and visually see their code come to life. Unlike other platforms, where you drag-and-drop blocks, with PyPlay, you're actually writing real Python code! We created this for IC Hack 2020.",
 		"sources": [
 			{
 				"name": "github",
@@ -45,7 +45,7 @@
 	{
 		"name": "Burst My Bubble",
 		"type": "Uni Project",
-		"tech" : ["React", "Python", "Java", "MongoDB", "Azure"],
+		"tech" : ["React", "Java", "MongoDB"],
 		"banner": "https://www.thoughtco.com/thmb/yT6yrtBDJDAxl7pIwwJ7-e1l97o=/2000x1334/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-551987659-5898c5b73df78caebc9e43f1.jpg",
 		"url": "burst-my-bubble",
 		"dates": "May 2019 - June 2019",
@@ -104,7 +104,7 @@
 	{
 		"name": "Automatic Monzo Receipts from Gmail",
 		"type": "Hackathon",
-		"tech" : ["Azure", "Python", "Flask", "SQLite"],
+		"tech" : ["Python", "Flask", "SQLite"],
 		"banner": "https://images.squarespace-cdn.com/content/55ed941ee4b0fe005b38b95d/1503770964368-MDMOLHC22MDRVHIU6EPS/monzocard.jpg?format=1500w&content-type=image%2Fjpeg",
 		"url": "monzo-receipts",
 		"dates": "January 2019",
@@ -137,7 +137,7 @@
 	{
 		"name": "MentorMe",
 		"type": "External Project",
-		"tech" : ["MongoDB", "Express", "React", "Node"],
+		"tech" : [ "React", "Node", "MongoDB"],
 		"banner": "https://cdn.vox-cdn.com/thumbor/OTFuSU3Vo3iwKvL-MAh34AD2AyE=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/62954051/mdoying_180118_2249_facebook_0445stills_3.0.jpg",
 		"url": "mentor-me",
 		"dates": "September 2018 - November 2018",
