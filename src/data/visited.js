@@ -140,7 +140,7 @@ const data = [{
 }, {
   "title": "Hong Kong",
   "latitude": 22.3193,
-  "longitude": 103.8198,
+  "longitude": 114.1694,
   "color":colorSet.next()
 }, {
   "title": "Orlando",
