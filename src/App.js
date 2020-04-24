@@ -7,6 +7,8 @@ import GlobalStyle from './styles/global';
 import { BrowserRouter as Router, Route, Switch, NavLink, Redirect} from "react-router-dom";
 
 import data from "./data/navigation.json";
+import projects from "./data/projects.json";
+
 
 import Home from "./components/home";
 import CV from "./components/cv";
@@ -15,6 +17,7 @@ import Education from "./components/education";
 import Projects from "./components/projects";
 import Me from "./components/me";
 import Map from "./components/map";
+import ProjectPage from "./components/project-page"
 
 import Navbar from "./components/sub-components/navbar"
 
@@ -38,11 +41,18 @@ class App extends Component {
           <Switch>
                 {
                   data.map((item, i) => {
-                    console.log(pages[i]);
                     return (
                       <Route path={item.link} exact component={pages[i]} />
                     );
                   }) 
+                }
+
+                {
+                  projects.map((item, i) => {
+                    return (
+                      <Route path={"/projects/" + (item.url)} exact render={(props) => <ProjectPage {...props} data={item} />} />
+                    );
+                  })
                 }
 
                 {/* Temporary redirect whilst site is in beta 
