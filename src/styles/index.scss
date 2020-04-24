@@ -350,6 +350,37 @@ a {
   transform: scale(1.1);
 }
 
+/* Individual project pages CSS */ 
+
+.project-page-content {
+  padding:30px;
+}
+
+.project-page-long-desc {
+  font-size: 14px;
+  padding-top: 20px;
+  flex: 40%;
+}
+
+.project-page-layout {
+  display: flex;
+  flex-wrap: flex;
+}
+
+.project-page-image-container {
+  flex: 60%;
+  padding-top: 10px;
+}
+
+.project-page-image {
+  width: 100%;
+  padding: 10px;
+}
+
+.project-page-video {
+  width: 100%;
+  padding: 10px;
+}
 
 /* Nav Bar CSS */ 
 
@@ -598,6 +629,11 @@ and (min-width : 326px) and (max-width: 481px) {
 
   .project-small{
     width: 100%;
+  }
+
+  /* Individual project page CSS */
+  .project-page-layout{
+    flex-direction: column;
   }
 }
 

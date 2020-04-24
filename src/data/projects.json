@@ -4,11 +4,10 @@
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["React", "Java", "MongoDB"],
-		"banner": "https://www.thoughtco.com/thmb/yT6yrtBDJDAxl7pIwwJ7-e1l97o=/2000x1334/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-551987659-5898c5b73df78caebc9e43f1.jpg",
 		"url": "burst-my-bubble",
 		"dates": "May 2019 - June 2019",
 		"short_desc": "An app to tackle the problem of confirmation bias in the current consumption of the news",
-		"long_desc": "This was our end of second year group project, where the brief was to create a webapp. We decided to create a news feed with a difference. The aim was to encourage people to change up their news sources and read some new material in order to \"Burst their Bubble\". We wrote it using React for the frontend and Python/Java for the backend, and used a MongoDB database.",
+		"long_desc": "This was our end of second year group project, where the brief was to create a webapp. We decided to create a news feed with a difference. The aim was to encourage people to change up their news sources and read some new material in order to 'Burst their Bubble'. \nWe wrote it using React for the frontend and Python/Java for the backend, and used a MongoDB database.",
 		"sources": [
 			{
 				"name": "gitlab",
@@ -16,16 +15,15 @@
 			}
 		],
 		"pictures": [
-			"/images/projects/bmb-1.png",
-			"/images/projects/bmb-2.png",
-			"/images/projects/bmb-3.png",
-			"/images/projects/bmb-4.png"
+			"bmb-1.png",
+			"bmb-2.png",
+			"bmb-3.png",
+			"bmb-4.png"
 		]
 	},
 	{
 		"name": "Canvas",
 		"hidden": false,
-		"banner": "/assets/images/project-headers/canvas.jpg",
 		"type": "Uni Project",
 		"tech" : ["Swift", "XCode", "CRDTs"],
 		"banner": "tbd",
@@ -45,7 +43,6 @@
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["C"],
-		"banner": "https://i.ytimg.com/vi/DW2ZxWX5XAY/maxresdefault.jpg",
 		"url": "snake",
 		"dates": "May 2018 - June 2018",
 		"short_desc": "A recreation of the classic game of Snake on a 32x32 LED matrix",
@@ -59,23 +56,23 @@
 		"videos": [
 			{
 				"title": "Startup",
-				"url": "https://www.youtube.com/embed/j-aXoEqF7yU"
+				"id": "j-aXoEqF7yU"
 			},
 			{
 				"title": "Classic Mode",
-				"url": "https://www.youtube.com/embed/072oDonJBBU"
+				"id": "072oDonJBBU"
 			},
 			{
 				"title": "Crazy Mode",
-				"url": "https://www.youtube.com/embed/l9AlzzPRaXk"
+				"id": "l9AlzzPRaXk"
 			},
 			{
 				"title": "Maze Mode",
-				"url": "https://www.youtube.com/embed/DRKbVj0Y6U0"
+				"id": "DRKbVj0Y6U0"
 			},
 			{
 				"title": "AI Timelapse",
-				"url": "https://www.youtube.com/embed/h3LU4xwfbko"
+				"id": "h3LU4xwfbko"
 			}
 		]
 	},
@@ -84,7 +81,6 @@
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["Kotlin", "ANTLR"],
-		"banner": "https://softwareengineeringdaily.com/wp-content/uploads/2018/10/kotlin.jpg",
 		"url": "wacc",
 		"dates": "January 2019 - March 2019",
 		"short_desc": "A compiler created for our own programming language",
@@ -95,7 +91,6 @@
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["HTML", "CSS", "Pandoc"],
-		"banner": "https://www.doc.ic.ac.uk/~jce317/content-images/medImaging.png",
 		"url": "topics",
 		"dates": "January 2018 - March 2018",
 		"short_desc": "A website discussing the uses of AI in Medical Imaging Analysis",
@@ -116,7 +111,6 @@
 		"hidden": false,
 		"type": "Hackathon",
 		"tech" : ["C", "Swift", "Arduino"],
-		"banner": "https://embed.widencdn.net/img/veritas/hhfs20mdfz/1280x720px/thoracic-vertebrae.jpeg",
 		"url": "correct-a-spine",
 		"dates": "March 2019",
 		"short_desc": "A device to prevent back pain",
@@ -132,18 +126,17 @@
 			}
 		],
 		"pictures": [
-			"/images/projects/cas-1.jpg",
-			"/images/projects/cas-2.jpg",
-			"/images/projects/cas-3.jpg",
-			"/images/projects/cas-4.jpg",
-			"/images/projects/cas-5.png"
+			"cas-1.jpg",
+			"cas-2.jpg",
+			"cas-3.jpg",
+			"cas-4.jpg",
+			"cas-5.png"
 		]
 	}, {
 		"name": "PyPlay",
 		"hidden": true,
 		"type": "Hackathon",
 		"tech" : ["Python", "Heroku", "HTML5"],
-		"banner": "https://images.squarespace-cdn.com/content/55ed941ee4b0fe005b38b95d/1503770964368-MDMOLHC22MDRVHIU6EPS/monzocard.jpg?format=1500w&content-type=image%2Fjpeg",
 		"url": "pyplay",
 		"dates": "February 2020",
 		"short_desc": "An app to teach young coders the basics of Python",
@@ -163,7 +156,7 @@
 			}
 		],
 		"pictures": [
-			"/images/projects/pyplay-1.jpg"
+			"pyplay-1.jpg"
 		]
 	},
 	{
@@ -171,7 +164,6 @@
 		"hidden": true,
 		"type": "Hackathon",
 		"tech" : ["Python", "Flask", "SQLite"],
-		"banner": "https://images.squarespace-cdn.com/content/55ed941ee4b0fe005b38b95d/1503770964368-MDMOLHC22MDRVHIU6EPS/monzocard.jpg?format=1500w&content-type=image%2Fjpeg",
 		"url": "monzo-receipts",
 		"dates": "January 2019",
 		"short_desc": "Integrating Gmail receipts into the Monzo app",
@@ -187,7 +179,7 @@
 			}
 		],
 		"pictures": [
-			"/images/projects/monzo-receipts.png"
+			"monzo-receipts.png"
 		]
 	},
 	{
@@ -195,7 +187,6 @@
 		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["C"],
-		"banner": "https://static.techspot.com/images2/news/bigimage/2018/07/2018-07-10-image-35.jpg",
 		"url": "pintos",
 		"dates": "October 2018 - December 2018",
 		"short_desc": "An Operating System we helped complete",
@@ -206,7 +197,6 @@
 		"hidden": true,
 		"type": "External Project",
 		"tech" : [ "React", "Node", "MongoDB"],
-		"banner": "https://cdn.vox-cdn.com/thumbor/OTFuSU3Vo3iwKvL-MAh34AD2AyE=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/62954051/mdoying_180118_2249_facebook_0445stills_3.0.jpg",
 		"url": "mentor-me",
 		"dates": "September 2018 - November 2018",
 		"short_desc": "An app to 'Bring Communities Together'",
@@ -223,7 +213,6 @@
 		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["C"],
-		"banner": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Raspberry_Pi_B%2B_top.jpg/2560px-Raspberry_Pi_B%2B_top.jpg",
 		"url": "arm11",
 		"dates": "May 2018 - June 2018",
 		"short_desc": "An ARM11 Emulator and Assembler",
@@ -234,7 +223,6 @@
 		"hidden": true,
 		"type": "School Project",
 		"tech" : ["Extended Writing"],
-		"banner": "https://miro.medium.com/max/3840/1*XZrU5omVCZPZXuYv2AZnog.jpeg",
 		"url": "epq",
 		"dates": "September 2016 - May 2017",
 		"short_desc": "An essay discussing the controversy over computer-assisted proofs",
@@ -251,7 +239,6 @@
 		"hidden": true,
 		"type": "School Project",
 		"tech" : ["Swift", "XCode"],
-		"banner": "https://www.tes.com/tesv2/files/styles/news_article_ml_x2/public/news-images/maths_blackboard.jpg?itok=wjVI9D-w",
 		"url": "imaths",
 		"dates": "June 2016 - March 2017",
 		"short_desc": "An app to teach students GCSE Maths",
