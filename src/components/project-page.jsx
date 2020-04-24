@@ -26,13 +26,24 @@ class ProjectPage extends Component  {
                     <h2 className="project-subheader">{this.props.data.dates}</h2>
                     <p className="project-short-desc">{this.props.data.short_desc}</p>     
                     <div className="project-page-layout">
-                        <p className="project-page-long-desc">                     
-                            {
-                                this.props.data.long_desc.split('\n').map((item, i) => {
-                                    return <p key={1}>{item}</p>;
-                                })
-                            }
-                        </p>
+                        <div class="project-page-text-container">
+                            {this.props.data.sources ?
+                                <div class="project-page-links">
+                                    {
+                                        this.props.data.sources.map((source, i) => {
+                                            return <a class="project-page-icon" href={source.url}><i class={`fab fa-${source.name} fa-3x`}></i></a>;
+                                        })
+                                    }
+                                </div>
+                            : ""}
+                            <p className="project-page-long-desc">                     
+                                {
+                                    this.props.data.long_desc.split('\n').map((item, i) => {
+                                        return <p key={1}>{item}</p>;
+                                    })
+                                }
+                            </p>
+                        </div>
                         <div className="project-page-image-container">
                             {
                                 this.props.data.pictures ?

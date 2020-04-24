@@ -359,7 +359,6 @@ a {
 .project-page-long-desc {
   font-size: 14px;
   padding-top: 20px;
-  flex: 40%;
 }
 
 .project-page-layout {
@@ -372,6 +371,10 @@ a {
   padding-top: 10px;
 }
 
+.project-page-text-container {
+  flex: 40%;
+}
+
 .project-page-image {
   width: 100%;
   padding: 10px;
@@ -380,6 +383,22 @@ a {
 .project-page-video {
   width: 100%;
   padding: 10px;
+}
+
+.project-page-links {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.project-page-icon {
+  border: none;
+  padding: 5px;
+}
+
+.project-page-icon:hover{
+	transform: scale(1.2); 
 }
 
 /* Nav Bar CSS */ 
