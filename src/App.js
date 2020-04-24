@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   render() {
-    const pages = [(props) => <Home {...props} navbarState={this.state.navbarOpen} />, CV, Experience, Education, Projects, Me];
+    const pages = [Home, CV, Experience, Education, Projects, Me];
     return(
       <div class="layout">
       <Router>
@@ -40,7 +40,7 @@ class App extends Component {
                   data.map((item, i) => {
                     console.log(pages[i]);
                     return (
-                      <Route path={item.link} exact render={pages[i]} />
+                      <Route path={item.link} exact component={pages[i]} />
                     );
                   }) 
                 }
@@ -49,7 +49,7 @@ class App extends Component {
                     Once out of beta, use this to automate deployment on git push 
                     https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
                     
-                <Route path="/personal-website" exact render={(props) => <Home {...props} navbarState={this.state.navbarOpen} />} />
+                <Route path="/personal-website"><Redirect to="/"/></Route>
 
                 {/* Pages which are not in the nav bar (should eventually be exported to another js file and imported) */}
 

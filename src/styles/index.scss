@@ -242,15 +242,9 @@ a {
   margin-left: 2%;  
   margin-right: 2%;
   text-align: left;
-}
-
-.project-small{
-  width: 46%;
-}
-
-.project-large{
   width: 100%;
 }
+
 
 
 .projects {
@@ -279,17 +273,64 @@ a {
 }
 
 .project-header {
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 30px;
 }
 .project-subheader {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: normal;
 }
 
 .project-short-desc {
-  padding-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+  position: absolute;
+  bottom: 3px;
+  background-color: rgba(0,0,0, 0.6);
+  padding: 10px;
+  width: 100%;
+}
+
+.project-long-desc {
   font-size: 14px;
+  padding-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.projects-button{
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  border:none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.projects-button:hover {
+  text-decoration: underline;
+}
+
+.project-image{
+  width:100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.project-image-container {
+  position:relative;
+}
+
+.project-header-container {
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0,0,0, 0.6);
+  padding: 10px;
+  width: 100%;
 }
 
 
@@ -535,6 +576,7 @@ and (min-width : 326px) and (max-width: 481px) {
   .project{
     margin-left: 10px;  
     margin-right: 10px;
+    padding: 0px;
   }
 
   .project-small{
@@ -583,7 +625,16 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .project {
-    background-color: $light_secondary;
+    // background-color: $light_secondary;
+  }
+
+  .project-header {
+    color: $light_accent;
+  }
+
+  .projects-button{
+    background-color: $light_accent;
+    color:$light_primary;
   }
   
 } 
@@ -628,7 +679,16 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .project {
-    background-color: $dark_secondary;
+    // background-color: $dark_secondary;
+  }
+
+  .project-header {
+    color: $dark_accent;
+  }
+
+  .projects-button{
+    background-color: $dark_accent;
+    color:$dark_primary;
   }
 
 }
