@@ -18,7 +18,9 @@ class Project extends Component {
             <Fragment>
                 <div className="project-content">
                     <div class="project-image-container">
-                        <img src={require(`../../assets/images/project-headers/${this.props.data.url}.jpg`)} alt={this.props.data.name + " Header Image"} className="project-image"/>
+                        <div class="project-img-zoom">
+                            <img src={require(`../../assets/images/project-headers/${this.props.data.url}.jpg`)} alt={this.props.data.name + " Header Image"} className="project-image"/>
+                        </div>
                         <div className="project-header-container">
                         <div className="project-badge-matrix">
                             { this.props.data.tech ?
