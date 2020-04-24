@@ -3,6 +3,8 @@ import "./styles/index.scss"
 
 import GlobalStyle from './styles/global';
 
+import ScrollToTop from 'react-router-scroll-top'
+
 
 import { BrowserRouter as Router, Route, Switch, NavLink, Redirect} from "react-router-dom";
 
@@ -36,6 +38,7 @@ class App extends Component {
     return(
       <div class="layout">
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <div className="main">
           <Switch>
