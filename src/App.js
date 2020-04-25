@@ -69,6 +69,7 @@ class App extends Component {
                 
                 {/* Redirects from old site */}
                 <Route path="/about"><Redirect to="/me"/></Route>
+                <Route path="/music"><Redirect to="/projects/musictech"/></Route>
 
                 {/* 404 Redirect for everything else  */}
                 <Route render={() => <h1>404: page not found</h1>} />
