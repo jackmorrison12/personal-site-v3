@@ -46,7 +46,7 @@ class ProjectPage extends Component  {
                             <p className="project-page-long-desc">                     
                                 {
                                     this.props.data.long_desc.split('\n').map((item, i) => {
-                                        return <p key={1}>{item}</p>;
+                                        return <p key={1} className="project-page-paragraph">{item}</p>;
                                     })
                                 }
                             </p>
