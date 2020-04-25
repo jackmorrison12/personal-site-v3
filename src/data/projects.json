@@ -1,6 +1,21 @@
 [
-	{
-		"name": "Burst My Bubble",
+	{ 	"name": "Canvas",
+		"hidden": false,
+		"type": "Uni Project",
+		"tech" : ["Swift", "XCode", "CRDTs"],
+		"banner": "tbd",
+		"url": "canvas",
+		"dates": "October 2019 - January 2020",
+		"short_desc": "A CRDT-powered collaborative drawing app",
+		"long_desc": "Remote collaboration has been increasing in popularity over the last couple of years, especially within professional working environments and academia. However, tools for visual collaboration, such as through drawing, are currently lacking, with many suffering from lag, dropped connections or devices not syncing together correctly. \n We have created a resilient collaborative drawing app for iPadOS, using Conflict-free Replicated Data Types (CRDTs), that aims to prevent failures as listed previously from becoming an issue.\nOur app, which is optimised for iPads, is called Canvas. Canvas allows users to connect and draw at the same time. Changes are propagated in real time, so if a user becomes temporarily disconnected, on reconnection, the changes that they made during this period will sync up. Canvas offers features such as shape recognition and bluetooth network optimisation.\nCRDTs are a class of abstract data types that allow their state to be distributed across devices, modified locally and then merged in a straight-forward manner, meaning that they guarantee eventual consistency. Therefore, Canvas is completely de-centralised, so does not rely on one of the nodes to always be connected. CRDTs are currently an open research area, so this project started as a proof of concept to show that they could be used in this context. \nSince this was an iPadOS app, we created it in XCode, using Swift 5.",
+		"sources": [
+			{
+				"name": "fab fa-github",
+				"url": "https://github.com/mnckapilan/crdt-canvas"
+			}
+		]
+	},
+	{   "name": "Burst My Bubble",
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["React", "Java", "MongoDB"],
@@ -21,25 +36,7 @@
 			"bmb-4.png"
 		]
 	},
-	{
-		"name": "Canvas",
-		"hidden": false,
-		"type": "Uni Project",
-		"tech" : ["Swift", "XCode", "CRDTs"],
-		"banner": "tbd",
-		"url": "canvas",
-		"dates": "October 2019 - January 2020",
-		"short_desc": "A CRDT-powered collaborative drawing app",
-		"long_desc": "Remote collaboration has been increasing in popularity over the last couple of years, especially within professional working environments and academia. However, tools for visual collaboration, such as through drawing, are currently lacking, with many suffering from lag, dropped connections or devices not syncing together correctly. \n We have created a resilient collaborative drawing app for iPadOS, using Conflict-free Replicated Data Types (CRDTs), that aims to prevent failures as listed previously from becoming an issue.\nOur app, which is optimised for iPads, is called Canvas. Canvas allows users to connect and draw at the same time. Changes are propagated in real time, so if a user becomes temporarily disconnected, on reconnection, the changes that they made during this period will sync up. Canvas offers features such as shape recognition and bluetooth network optimisation.\nCRDTs are a class of abstract data types that allow their state to be distributed across devices, modified locally and then merged in a straight-forward manner, meaning that they guarantee eventual consistency. Therefore, Canvas is completely de-centralised, so does not rely on one of the nodes to always be connected. CRDTs are currently an open research area, so this project started as a proof of concept to show that they could be used in this context. \nSince this was an iPadOS app, we created it in XCode, using Swift 5.",
-		"sources": [
-			{
-				"name": "fab fa-github",
-				"url": "https://github.com/mnckapilan/crdt-canvas"
-			}
-		]
-	},
-	{
-		"name": "Snake Arcade Machine",
+	{	"name": "Snake Arcade Machine",
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["C"],
@@ -76,8 +73,7 @@
 			}
 		]
 	},
-	{
-		"name": "Deep Learning in Medical Imaging Analysis",
+	{	"name": "Deep Learning in Medical Imaging Analysis",
 		"hidden": false,
 		"type": "Uni Project",
 		"tech" : ["HTML", "CSS", "Pandoc"],
@@ -96,9 +92,49 @@
 			}
 		]
 	},
-	{
-		"name": "Correct-a-Spine",
+	{	"name": "Music Technology",
 		"hidden": false,
+		"type": "Uni Project",
+		"tech" : ["Cubase", "Logic"],
+		"url": "musictech",
+		"dates": "October 2019 - May 2020",
+		"short_desc": "An introduction into the production of music",
+		"long_desc": "I really enjoy listening to music, and so I thought that I'd enjoy taking a course in music technology, where I could learn how to produce my own music. I took this as one of my courses in my third year of uni. \n We covered many topics, starting off with the basics of how to use a Digital Audio Workstation, such as creating sounds using software instruments and MIDI keyboards. We then moved on to learn things like mixing and using inserts and sends. \n We used Cubase in class, however due to coronavirus, I had to teach myself how to use Logic Pro X in order to be able to create and submit my work. \n For the course assessment, we had to create two compositions. You can find both of mine on this page, as well as some other things I created along the way!",
+		"sources": [
+			{
+				"name": "fab fa-github",
+				"url": "https://github.com/jackmorrison12/musictech"
+			}
+		],
+		"music": [
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v3.mp3?token=AHZEIJFCR57FYX24IEPE3A26VX52S",
+				"name": "Symphony (Clean Bandit ft. Zara Larsson Remix)"
+			},
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v6.mp3?token=AHZEIJGNBMC4TK5I5PZZ6TC6VX53U",
+				"name": "Symphony Instrumental (Clean Bandit ft. Zara Larsson Remix)"
+			},
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Trumpet%20song.mp3?token=AHZEIJDJAENZSBNLVNZVZKC6VX5YW",
+				"name": "Trumpet Song"
+			},
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Meme%20Song.mp3?token=AHZEIJEKUVN57S3NQZVVOZK6VX5V2",
+				"name": "Into the Circus"
+			},
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Nonstop.mp3?token=AHZEIJH7UMFX4GHEPQM7POC6VX5FA",
+				"name": "Nonstop (Drake Cover)"
+			},
+			{
+				"filename": "Bojo_v4",
+				"name": "Coronavirus Informational Trap Remix"
+			}
+		]
+	},
+	{	"name": "Correct-a-Spine",
+		"hidden": true,
 		"type": "Hackathon",
 		"tech" : ["C", "Swift", "Arduino"],
 		"url": "correct-a-spine",
@@ -123,18 +159,7 @@
 			"cas-5.png"
 		]
 	}, 
-	{
-		"name": "WACC",
-		"hidden": true,
-		"type": "Uni Project",
-		"tech" : ["Kotlin", "ANTLR"],
-		"url": "wacc",
-		"dates": "January 2019 - March 2019",
-		"short_desc": "A compiler created for our own programming language",
-		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
-	},
-	{
-		"name": "PyPlay",
+	{	"name": "PyPlay",
 		"hidden": true,
 		"type": "Hackathon",
 		"tech" : ["Python", "Heroku", "HTML5"],
@@ -160,8 +185,7 @@
 			"pyplay-1.jpg"
 		]
 	},
-	{
-		"name": "Automatic Monzo Receipts from Gmail",
+	{	"name": "Automatic Monzo Receipts from Gmail",
 		"hidden": true,
 		"type": "Hackathon",
 		"tech" : ["Python", "Flask", "SQLite"],
@@ -183,8 +207,16 @@
 			"monzo-receipts.png"
 		]
 	},
-	{
-		"name": "Pintos",
+	{	"name": "WACC",
+		"hidden": true,
+		"type": "Uni Project",
+		"tech" : ["Kotlin", "ANTLR"],
+		"url": "wacc",
+		"dates": "January 2019 - March 2019",
+		"short_desc": "A compiler created for our own programming language",
+		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
+	},
+	{	"name": "Pintos",
 		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["C"],
@@ -193,8 +225,7 @@
 		"short_desc": "An Operating System we helped complete",
 		"long_desc": "This was our 2nd year operating systems project, where the task was to implement different parts of an operating system, including scheduling, user programs and virtual memory. This project was written entirely in C.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
 	},
-	{
-		"name": "MentorMe",
+	{	"name": "MentorMe",
 		"hidden": true,
 		"type": "External Project",
 		"tech" : [ "React", "Node", "MongoDB"],
@@ -209,8 +240,7 @@
 			}
 		]
 	},
-	{
-		"name": "ARM11 Emulator and Assembler",
+	{	"name": "ARM11 Emulator and Assembler",
 		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["C"],
@@ -219,8 +249,7 @@
 		"short_desc": "An ARM11 Emulator and Assembler",
 		"long_desc": "This project was completed in the final term of my first year undergraduate studies. It entailed creating an ARM11 Emulator and Assembler in C, then using these in combination with a Raspberry Pi to control an LED.\nUnfortunately the code for the emulator and assembler cannot be shared here as the task will be reused in future years."
 	},
-	{
-		"name": "To What Extent are Computer-Assisted Proofs Valid?",
+	{	"name": "To What Extent are Computer-Assisted Proofs Valid?",
 		"hidden": true,
 		"type": "School Project",
 		"tech" : ["Extended Writing"],
@@ -235,8 +264,7 @@
 			}
 		]
 	},
-	{
-		"name": "iMaths",
+	{	"name": "iMaths",
 		"hidden": true,
 		"type": "School Project",
 		"tech" : ["Swift", "XCode"],

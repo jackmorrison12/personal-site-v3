@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 import YouTube from 'react-youtube';
-
+import ReactAudioPlayer from 'react-audio-player';
 
 class ProjectPage extends Component  {
 
@@ -51,7 +51,7 @@ class ProjectPage extends Component  {
                                 }
                             </p>
                         </div>
-                        <div className="project-page-image-container">
+                        <div className="project-page-media-container">
                             {
                                 this.props.data.pictures ?
                                     this.props.data.pictures.map((pic, i) => {
@@ -66,6 +66,22 @@ class ProjectPage extends Component  {
                                 this.props.data.videos.map((vid, i) => {
                                     return (                            
                                         <YouTube className="project-page-video"  videoId={vid.id}  />
+                                    );
+                                })
+                            : ""  
+                            }
+                            {
+                                this.props.data.music ?
+                                this.props.data.music.map((vid, i) => {
+                                    return (  
+                                        <div className="project-page-song">         
+                                            <h2>{vid.name}</h2>                 
+                                            <ReactAudioPlayer
+                                                src={vid.filename}
+                                                className="project-page-audio-player"
+                                                controls
+                                                />
+                                        </div>
                                     );
                                 })
                             : ""  

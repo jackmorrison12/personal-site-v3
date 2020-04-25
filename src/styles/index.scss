@@ -377,7 +377,7 @@ a {
   flex-wrap: flex;
 }
 
-.project-page-image-container {
+.project-page-media-container {
   flex: 60%;
   padding-top: 10px;
 }
@@ -394,6 +394,16 @@ a {
 .project-page-video {
   width: 100%;
   padding: 10px;
+}
+
+.project-page-audio-player {
+  width: 100%;
+  padding: 10px;
+}
+
+.project-page-song h2{
+  text-align: right;
+  padding-right: 15px;
 }
 
 .project-page-links {
