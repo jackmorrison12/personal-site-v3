@@ -10,7 +10,7 @@
 		"long_desc": "This was our end of second year group project, where the brief was to create a webapp. We decided to create a news feed with a difference. The aim was to encourage people to change up their news sources and read some new material in order to 'Burst their Bubble'. \nWe wrote it using React for the frontend and Python/Java for the backend, and used a MongoDB database.",
 		"sources": [
 			{
-				"name": "gitlab",
+				"name": "fab fa-gitlab",
 				"url": "https://gitlab.doc.ic.ac.uk/BurstMyBubble"
 			}
 		],
@@ -33,7 +33,7 @@
 		"long_desc": "Remote collaboration has been increasing in popularity over the last couple of years, within professional working environments, academia as well as other fields. Tools for visual collaboration, such as through drawing, are currently lacking, with many suffering from lag, dropped connections or devices not syncing together correctly.  We have created a resilient collaborative drawing app for iOS using Conflict-free Replicated Data Rypes (CRDTs) that aims to prevent failures as listed previously from becoming an issue.\nOur app, which is optimised for iPads, is called Canvas. Canvas allows users to connect and draw at the same time. Changes are propagated in real time, so if a user becomes temporarily disconnected, on reconnection, the changes that they made during this period will sync up. Canvas offers features such as shape recognition and bluetooth network optimisation.\nCRDTs are a class of abstract data types that allow their state to be distributed across devices, modified locally and then merged in a straight-forward manner. The important thing to note is that CRDTs guarantee eventual consistency. Therefore, Canvas is completely de-centralized, i.e. it does not rely on one of the nodes to always be connected. ",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/mnckapilan/crdt-canvas"
 			}
 		]
@@ -49,7 +49,7 @@
 		"long_desc": "We chose to recreate the classic game of snake on a 32x32 LED matrix. We did this by using a hat for the Raspberry Pi to connect it to the matrix, and created 4 modes for the game, one of which was an Artificial Intelligence. We also created an arcade-machine inspired box for the project, and created all of our own sounds too.\nThis project won the prize for the best group project extension, judged by the creators of the Raspberry Pi themselves.",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/et-tamen-compilat/snake"
 			}
 		],
@@ -97,11 +97,11 @@
 		"long_desc": "This project was undertaken as my first year group project, and involved creating a website discussing the uses of AI in Medical Imaging Analysis.\nOur main areas of research were to look into the history and evolution of medical imaging and machine learning as separate topics, and then find areas in which they overlapped. We looked at Convolutional Neural Networks, along with Semantic Segmentation, as these are the most commmonplace in medical imaging. We then looked at overlapping topics, these being the uses of AI in radiology, and a deeper case study into the user for detection of lung cancer.",
 		"sources": [
 			{
-				"name": "website",
+				"name": "fas fa-link",
 				"url": "https://www.doc.ic.ac.uk/~jce317/"
 			},
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/et-tamen-compilat/medical-image-computing"
 			}
 		]
@@ -117,7 +117,7 @@
 		"long_desc": "This was a hackathon entry for Imperial College Health Hack 19. Problems with posture arise because of upper and lower back problems, but the current technologies only focus on one of these, and so we decided to use an accelerometer and flex sensor to measure both of these to prevent both kinds of back pain with a single device. The results are shows in an iOS application which is sent the data via Bluetooth.",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/ricardomokhtari/HealthHack2019"
 			},
 			{
@@ -143,7 +143,7 @@
 		"long_desc": "Creativity, Curiosity, Coding! Those are our three C's, our core values here at PyPlay. We wanted to create an application to teach young coders the basics of Python. We want to provide an easy-to-use interface, where kids can write code, and visually see their code come to life. Unlike other platforms, where you drag-and-drop blocks, with PyPlay, you're actually writing real Python code! We created this for IC Hack 2020.",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/jackmorrison12/pyplay"
 			},
 			{
@@ -151,7 +151,7 @@
 				"url": "https://devpost.com/software/pyplay"
 			},
 			{
-				"name": "website",
+				"name": "fas fa-link",
 				"url": "http://code.pyplay.co.uk/"
 			}
 		],
@@ -170,7 +170,7 @@
 		"long_desc": "This app was created as part of Cambridge Hack 4D. \nIt displays recent transactions to the user, and if the user clicks the \"Add Receipt\" button, then it will use the Gmail API to scan their emails, find the correct one, and gather the receipt data, adding this to the Monzo application. \nIt is also possible to have pictures of receipts if they are physical and not in the emails, and then the same algorithm is run on the text data gathered from the receipt using Microsoft Azrure OCR to get the equivalent information and add it to the transaction in the Monzo app.",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/et-tamen-compilat/monzo-receipts"
 			},
 			{
@@ -203,7 +203,7 @@
 		"long_desc": "We created a project as part of the Facebook Hack-a-Project with the aim of \"Bringing Communities Together\". Our application is a mentoring application which allows people with valuable skills and experiences to trade that knowledge for knowledge from others. It was built using the MERN stack (MongoDB, Express, React and Node.js).",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/HashimR/mentorme"
 			}
 		]
@@ -229,7 +229,7 @@
 		"long_desc": "This project was completed as my Extended Project during my A Level studies, and discussed the controversy over computer-assisted proofs.\nAt the start of this project, I was unfamiliar with the area of computer-assisted proofs, and mathematical proofs in general for that matter. I decided on the topic because my mathematics teacher had discussed it in a lesson and I was curious to find out more. He mentioned that many mathematicians, to my surprise, did not agree that a theorem which had been proved using proof by exhaustion on a computer was legitimate. I did not understand their reasoning behind it not being a proof, because I presumed that if every case was proved to be true, then the proof would have to be valid. That is why I became interested in the subject, and when that chance to write a project on the topic arose, I decided I wanted to consider it further.",
 		"sources": [
 			{
-				"name": "file",
+				"name": "fas fa-file-pdf",
 				"url": "/files/epq.pdf"
 			}
 		]
@@ -245,7 +245,7 @@
 		"long_desc": "This project was mainly undertaken during the second year of my A Level Computing studies, with the task to create a mobile application.\nI decided to create an app which could generate random GCSE-level mathematics questions for students so that they could test their knowledge. It could also check to see if their answers were correct, and had other features such as a leaderboard with friends, and streaks to encourage daily use. I made the application for iOS devices, and so had a lot of experience with the Swift programming language and XCode. This project was a fun way of teaching myself a new programming language from scratch, as I was never taught it in a formal environment. This meant I became used to using manuals for the language to look up syntax and specific features of the language, which was a great learning experience.",
 		"sources": [
 			{
-				"name": "github",
+				"name": "fab fa-github",
 				"url": "https://github.com/jackmorrison12/ALevelCoursework"
 			}
 		]

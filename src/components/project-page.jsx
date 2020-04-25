@@ -31,7 +31,12 @@ class ProjectPage extends Component  {
                                 <div class="project-page-links">
                                     {
                                         this.props.data.sources.map((source, i) => {
-                                            return <a class="project-page-icon" href={source.url}><i class={`fab fa-${source.name} fa-3x`}></i></a>;
+                                            {
+                                               return  source.name == "devpost" ? 
+                                                    <a class="project-page-icon" href={source.url}><img src={require(`../assets/images/devpost.png`)} /></a>
+                                               : 
+                                                    <a class="project-page-icon" href={source.url}><i class={`${source.name} fa-3x`}></i></a>
+                                            }
                                         })
                                     }
                                 </div>
