@@ -584,6 +584,23 @@ a {
   }
 }
 
+/* Landscape Mobile CSS for Nav */ 
+@media only screen and (max-width: 896px) and (min-width: 481px) {
+
+  .nav-brand {
+    display: none;
+  }
+
+  .footer {
+    display:  none;
+  }
+
+  .nav.open {
+    padding-top: 5rem; 
+  }
+}
+
+
 /* Mobile-specific classes for iPhone 5 and below */
 @media only screen 
 and (max-width : 325px) {
