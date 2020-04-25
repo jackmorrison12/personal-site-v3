@@ -77,16 +77,6 @@
 		]
 	},
 	{
-		"name": "WACC",
-		"hidden": false,
-		"type": "Uni Project",
-		"tech" : ["Kotlin", "ANTLR"],
-		"url": "wacc",
-		"dates": "January 2019 - March 2019",
-		"short_desc": "A compiler created for our own programming language",
-		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
-	},
-	{
 		"name": "Deep Learning in Medical Imaging Analysis",
 		"hidden": false,
 		"type": "Uni Project",
@@ -132,7 +122,18 @@
 			"cas-4.jpg",
 			"cas-5.png"
 		]
-	}, {
+	}, 
+	{
+		"name": "WACC",
+		"hidden": true,
+		"type": "Uni Project",
+		"tech" : ["Kotlin", "ANTLR"],
+		"url": "wacc",
+		"dates": "January 2019 - March 2019",
+		"short_desc": "A compiler created for our own programming language",
+		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
+	},
+	{
 		"name": "PyPlay",
 		"hidden": true,
 		"type": "Hackathon",
