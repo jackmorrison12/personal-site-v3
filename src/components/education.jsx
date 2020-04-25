@@ -7,13 +7,14 @@ import data from "../data/education.json";
 export default function Education() {
     return(
         <Fragment>
-        {
-            data.map(item => {
-            return (
-                <Box data = {item}></Box>
-            );
-            }) 
-        }
+            <h1 class="title">Education</h1>
+            {
+                data.map(item => {
+                return (
+                    <Box data = {item}></Box>
+                );
+                }) 
+            }
         </Fragment>
     );
 }

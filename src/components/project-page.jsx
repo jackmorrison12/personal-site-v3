@@ -7,6 +7,8 @@ class ProjectPage extends Component  {
     render () {
         return(
             <Fragment>
+                {/* Move title etc. to right? */}
+                {/* <h1 className="title">{this.props.data.name}</h1> */}
                 <div className="project-page-content">
                     <div className="project-badge-matrix">
                         { this.props.data.tech ?
@@ -22,7 +24,7 @@ class ProjectPage extends Component  {
                             : ""
                         }
                     </div>
-                    <h1 className="project-header">{this.props.data.name}</h1>
+                    <h1 className="project-page-header">{this.props.data.name}</h1>
                     <h2 className="project-subheader">{this.props.data.dates}</h2>
                     <p className="project-short-desc">{this.props.data.short_desc}</p>     
                     <div className="project-page-layout">

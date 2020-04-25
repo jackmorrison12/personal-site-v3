@@ -23,7 +23,7 @@ const Home = (props) =>  {
                     Hello, I'm Jack
                 </h1>
                 <div className="home-subheading show-desktop-only">
-                    <p>Hey, I'm Jack. I'm a Software Engineer from London, UK. </p>
+                    <p>I'm a Software Engineer from London, UK. </p>
                     <p>I'm currently studying Computing at Imperial College London. </p>
                     <p>Look around here to get to know a bit more about me!</p>
                 </div>

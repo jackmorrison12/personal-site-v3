@@ -27,9 +27,17 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
 /* Home page CSS */
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
 }
 
 
@@ -72,6 +80,7 @@ a {
 
 .box {
   padding: 30px;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   
@@ -144,6 +153,8 @@ a {
 
 .me-outer {
   padding: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -230,7 +241,7 @@ a {
 
 #chartdiv {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 101px);
   overflow: hidden;
 }
 
@@ -240,8 +251,8 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   margin: 20px;
-  margin-left: 2%;  
-  margin-right: 2%;
+  margin-left: 10px;  
+  margin-right: 10px;
   text-align: left;
   width: 100%;
   cursor:pointer;
@@ -255,8 +266,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left:10px;
+  padding-right: 10px;
 }
 
 .project-collapsed {
@@ -403,6 +414,10 @@ a {
 
 .project-page-icon:hover{
 	transform: scale(1.2); 
+}
+
+.project-page-header {
+  font-size: 50px;
 }
 
 /* Nav Bar CSS */ 
@@ -601,6 +616,15 @@ and (min-width : 326px) and (max-width: 481px) {
 /* Mobile-specific classes */
 @media screen and (max-width: 481px){
 
+  .title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
   .main {
     padding-top: 25px;
     padding-left: 0px;
@@ -642,12 +666,22 @@ and (min-width : 326px) and (max-width: 481px) {
     display:none;
   }
 
+  /* Map CSS */ 
+
+  #chartdiv {
+    height: calc(50vh);
+  }
+
   /* Project Page CSS */
 
   .project{
     margin-left: 10px;  
     margin-right: 10px;
     padding: 0px;
+  }
+
+  .projects {
+    padding-top: 20px;
   }
 
   .project-small{
@@ -712,6 +746,14 @@ and (min-width : 326px) and (max-width: 481px) {
     background-color: $light_accent;
     color:$light_primary;
   }
+
+  .project-page-header {
+    color: $light_accent;
+  }
+
+  .title {
+    color: $light_accent;
+  }
   
 } 
 
@@ -765,6 +807,14 @@ and (min-width : 326px) and (max-width: 481px) {
   .projects-button{
     background-color: $dark_accent;
     color:$dark_primary;
+  }
+
+  .project-page-header {
+    color: $dark_accent;
+  }
+
+  .title {
+    color: $dark_accent;
   }
 
 }

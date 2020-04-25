@@ -93,7 +93,8 @@ class Map extends Component {
     render() {
 
         return (
-        <>        
+        <>      
+            <h1 class="title">Places I've Visited</h1>
             <div id="chartdiv"></div>
         </>
         )

@@ -24,6 +24,7 @@ import titles from "../data/titles.json"
 export default function Me() {
     return(
         <Fragment>
+            <h1 class="title">About Me</h1>
             <div class="me-outer">
                 <div class="me-left">
                     {/* <Fade left> */}

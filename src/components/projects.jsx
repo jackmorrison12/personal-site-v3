@@ -19,6 +19,7 @@ class Projects extends Component {
       render() {
         return(
             <Fragment>
+                <h1 class="title">Projects</h1>
                 <div class="projects">
                     {
                         projects.map((project) => {
