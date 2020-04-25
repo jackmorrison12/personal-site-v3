@@ -5,7 +5,6 @@ import projects from "../data/projects.json";
 import Fade from 'react-reveal/Fade';
 
 import Project from "./sub-components/project";
-import { render } from "@testing-library/react";
 
 class Projects extends Component {
 

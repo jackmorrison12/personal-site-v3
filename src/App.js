@@ -6,7 +6,7 @@ import GlobalStyle from './styles/global';
 import ScrollToTop from 'react-router-scroll-top'
 
 
-import { BrowserRouter as Router, Route, Switch, NavLink, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
 import data from "./data/navigation.json";
 import projects from "./data/projects.json";
