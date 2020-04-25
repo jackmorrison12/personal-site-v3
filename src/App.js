@@ -63,7 +63,6 @@ class App extends Component {
                     https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/ */}
                     
                 <Route path="/personal-website"><Redirect to="/"/></Route>
-
                 {/* Pages which are not in the nav bar (should eventually be exported to another js file and imported) */}
 
                 <Route path="/map" exact component={Map} />
