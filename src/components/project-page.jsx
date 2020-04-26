@@ -51,42 +51,51 @@ class ProjectPage extends Component  {
                                 }
                             </p>
                         </div>
-                        <div className="project-page-media-container">
-                            {
-                                this.props.data.pictures ?
-                                    this.props.data.pictures.map((pic, i) => {
+                        {this.props.data.pictures || this.props.data.videos || this.props.data.music ? 
+                            <div className="project-page-media-container">
+                                {
+                                    this.props.data.pictures ?
+                                        this.props.data.pictures.map((pic, i) => {
+                                            return (                            
+                                                <img className="project-page-image" src={require(`../assets/images/projects/${pic}`)} alt={this.props.data.name + " Image " + i}/>
+                                            );
+                                        })
+                                    : ""
+                                }
+                                {
+                                    this.props.data.videos ?
+                                    this.props.data.videos.map((vid, i) => {
                                         return (                            
-                                            <img className="project-page-image" src={require(`../assets/images/projects/${pic}`)} alt={this.props.data.name + " Image " + i}/>
+                                            <YouTube className="project-page-video"  videoId={vid.id}  />
                                         );
                                     })
-                                : ""
-                            }
-                            {
-                                this.props.data.videos ?
-                                this.props.data.videos.map((vid, i) => {
-                                    return (                            
-                                        <YouTube className="project-page-video"  videoId={vid.id}  />
-                                    );
-                                })
-                            : ""  
-                            }
-                            {
-                                this.props.data.music ?
-                                this.props.data.music.map((vid, i) => {
-                                    return (  
-                                        <div className="project-page-song">         
-                                            <h2>{vid.name}</h2>                 
-                                            <ReactAudioPlayer
-                                                src={vid.filename}
-                                                className="project-page-audio-player"
-                                                controls
-                                                />
-                                        </div>
-                                    );
-                                })
-                            : ""  
-                            }
-                        </div>
+                                : ""  
+                                }
+                                {
+                                    this.props.data.music ?
+                                    this.props.data.music.map((vid, i) => {
+                                        return (  
+                                            <div className="project-page-song">         
+                                                <h2>{vid.name}</h2>                 
+                                                <ReactAudioPlayer
+                                                    src={vid.filename}
+                                                    className="project-page-audio-player"
+                                                    controls
+                                                    />
+                                            </div>
+                                        );
+                                    })
+                                : ""  
+                                }
+                            </div>
+                            :
+                            "" 
+                        }
+
+                        {this.props.data.python ? 
+                            <div className="project-page-table">Python stuff</div>
+                        :
+                            "" }
                     </div>           
                 </div>
 
