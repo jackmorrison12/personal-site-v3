@@ -108,28 +108,28 @@
 		],
 		"music": [
 			{
-				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v3.mp3?token=AHZEIJFCR57FYX24IEPE3A26VX52S",
-				"name": "Symphony (Clean Bandit ft. Zara Larsson Remix)"
-			},
-			{
-				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v6.mp3?token=AHZEIJGNBMC4TK5I5PZZ6TC6VX53U",
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v6.mp3",
 				"name": "Symphony Instrumental (Clean Bandit ft. Zara Larsson Remix)"
 			},
 			{
-				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Trumpet%20song.mp3?token=AHZEIJDJAENZSBNLVNZVZKC6VX5YW",
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Bojo_v8.mp3",
+				"name": "Coronavirus Informational Trap Remix"
+			},
+			{
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Trumpet%20song.mp3",
 				"name": "Trumpet Song"
 			},
 			{
-				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Meme%20Song.mp3?token=AHZEIJEKUVN57S3NQZVVOZK6VX5V2",
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Meme%20Song.mp3",
 				"name": "Into the Circus"
 			},
 			{
-				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Nonstop.mp3?token=AHZEIJH7UMFX4GHEPQM7POC6VX5FA",
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Nonstop.mp3",
 				"name": "Nonstop (Drake Cover)"
-			},
+			}, 			
 			{
-				"filename": "Bojo_v4",
-				"name": "Coronavirus Informational Trap Remix"
+				"filename": "https://raw.githubusercontent.com/jackmorrison12/musictech/master/mp3s/Symphony_v3.mp3",
+				"name": "Symphony (Clean Bandit ft. Zara Larsson Remix)"
 			}
 		]
 	},
