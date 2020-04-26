@@ -20,6 +20,7 @@ import Projects from "./components/projects";
 import Me from "./components/me";
 import Map from "./components/map";
 import ProjectPage from "./components/project-page"
+import ErrorPage from "./components/404"
 
 import Navbar from "./components/sub-components/navbar"
 
@@ -72,7 +73,7 @@ class App extends Component {
                 <Route path="/music"><Redirect to="/projects/musictech"/></Route>
 
                 {/* 404 Redirect for everything else  */}
-                <Route render={() => <h1>404: page not found</h1>} />
+                <Route component={ErrorPage} />
           </Switch>
         </div>
       </Router>

@@ -434,6 +434,13 @@ a {
   padding-bottom: 14px;
 }
 
+/* 404 Page CSS */
+
+.error-image {
+  width: 100%;
+  padding: 15vh;
+}
+
 /* Nav Bar CSS */ 
 
 .nav {
@@ -722,6 +729,13 @@ and (min-width : 326px) and (max-width: 481px) {
   /* Individual project page CSS */
   .project-page-layout{
     flex-direction: column;
+  }
+
+  /* 404 Page CSS */
+  
+  .error-image {
+    padding: 2vh;
+    padding-top: 10vh;
   }
 }
 
