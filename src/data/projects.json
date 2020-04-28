@@ -81,6 +81,7 @@
 		"dates": "January 2018 - March 2018",
 		"short_desc": "A website discussing the uses of AI in Medical Imaging Analysis",
 		"long_desc": "This project was undertaken as my first year group project, and involved creating a website discussing the uses of AI in Medical Imaging Analysis, aimed at a non-specilist.\nOur main areas of research were to look into the history and evolution of medical imaging and machine learning as separate topics, and then find areas in which they overlapped. We looked at Convolutional Neural Networks, along with Semantic Segmentation, as these are the most commmonplace in medical imaging. We then looked at overlapping topics, these being the uses of AI in radiology, and a deeper case study into the user for detection of lung cancer.\n Getting to know all of this information about AI was great, but we also had to present it in the form of a website. We had to create the site from scratch (without using a framework, such as Wordpress). We wrote the in Markdown, and used a Bash script (which invoked Pandoc) compiled it to HTML. Since we didn't use a web framework to write the CSS, it increased the challenge, but also meant that after the project, we had a more thorough understanding of CSS. Mobile optimisation was one particular challenge we found difficult. \n We won the prize for the best project in our category of AI in Medical Imaging, and second best project overall.",
+		
 		"sources": [
 			{
 				"name": "fas fa-link",
@@ -140,7 +141,17 @@
 		"url": "python",
 		"dates": "January 2020 - March 2020",
 		"short_desc": "A crash course in Python designed for Year 10 students",
-		"long_desc": "I love teaching blah",
+		"long_desc": "I taught a course on the basics of Python Programming to some Year 10 students at The Coopers' Company and Coborn School in Upminster. This was as part of my module 'Communication Computer Science in Schools'.\n They already had a basic knowledge of Python, so I expanded upon this by teaching them topics such as 2D Arrays, For and While Loops, Functions and Built-in Methods. \n You can see a detailed report of my experience at the school linked above, along with the presentation I gave about my time there. As you'll see, I enjoyed my experience very much, and I learned a lot about how to communicate effectively, and convey technical knowledge to people. \n I created lots of teaching resources for my course, including a system to allow students to compete at coding challenges, which was a combination of HackerRank and Kahoot. More detail on this, along with a technical implementation, can be found in the report above. All of my slides, worksheets and other teaching resources can also be found on this page, if you're wanting to learn Python yourself! Please feel free to use them if you would like, and let me know how you find them - I'd love to hear if they come in useful!",
+		"sources": [
+			{
+				"name": "fas fa-file-alt",
+				"url": "/files/ccsis_report.pdf"
+			},
+			{
+				"name": "fas fa-file-powerpoint",
+				"url": "https://docs.google.com/presentation/d/1zXWeOgT8CM1S1xCVTR7GiagKBdyYYHyicyfPka6YC0o/edit?usp=sharing"
+			}
+		],
 		"python" : [
 			{
 				"name": "Arrays",
