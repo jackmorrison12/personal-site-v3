@@ -71,6 +71,7 @@ class App extends Component {
                 {/* Redirects from old site */}
                 <Route path="/about"><Redirect to="/me"/></Route>
                 <Route path="/music"><Redirect to="/projects/musictech"/></Route>
+                <Route path="/python"><Redirect to="/projects/python"/></Route>
 
                 {/* 404 Redirect for everything else  */}
                 <Route component={ErrorPage} />
