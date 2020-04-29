@@ -17,7 +17,7 @@ class ProjectPage extends Component  {
                             this.props.data.tech.map(tech => {
                                 return (
                                     <div className="box-badge-wrapper">
-                                        <div className="box-badge">
+                                        <div className="project-page-badge">
                                             {tech}
                                         </div>
                                     </div>
@@ -27,8 +27,8 @@ class ProjectPage extends Component  {
                         }
                     </div>
                     <h1 className="project-page-header">{this.props.data.name}</h1>
-                    <h2 className="project-subheader">{this.props.data.dates}</h2>
-                    <p className="project-short-desc">{this.props.data.short_desc}</p>     
+                    <h2 className="project-page-subheader">{this.props.data.dates}</h2>
+                    <p className="project-page-short-desc">{this.props.data.short_desc}</p>     
                     <div className="project-page-layout">
                         <div class="project-page-text-container">
                             {this.props.data.sources ?

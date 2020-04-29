@@ -2,10 +2,10 @@ $dark_primary: #1B2735;
 $dark_secondary: #202124;
 $dark_accent: #fdcb6e;
 
-$light_primary: #a7d3ff;
-$light_secondary: #F1F3F4;
-$light_accent: white;
-$light_accent2: #6db6ff;
+$light_primary: #F4F4F4;
+$light_secondary: #FFFFFF;
+$light_accent: rgb(0, 119, 255);
+$light_accent2: rgb(132, 189, 255);
 
 
 body {
@@ -293,11 +293,13 @@ a {
 .project-subheader {
   font-size: 24px;
   font-weight: normal;
+  color:white;
 }
 
 .project-short-desc {
   font-size: 18px;
   font-style: italic;
+  color: white;
   // position: absolute;
   // bottom: 0px;
   // background-color: rgba(0,0,0, 0.6);
@@ -360,6 +362,16 @@ a {
 
 .project-img-zoom:hover img {
   transform: scale(1.1);
+}
+
+.project-badge{
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 12px;
 }
 
 /* Individual project pages CSS */ 
@@ -433,6 +445,31 @@ a {
   font-size: 50px;
 }
 
+.project-page-subheader {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.project-page-badge{
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.project-page-short-desc {
+  font-size: 18px;
+  font-style: italic;
+  // position: absolute;
+  // bottom: 0px;
+  // background-color: rgba(0,0,0, 0.6);
+  // padding: 10px;
+  // width: 100%;
+}
+
 .project-page-paragraph {
   padding-bottom: 14px;
 }
@@ -498,6 +535,9 @@ a {
   padding: 40px 20px;
   justify-content: space-between;
   text-align: center;
+
+  border-right: solid;
+  border-right-width: thin;
 
   .nav-brand {
     text-align: center;
@@ -588,6 +628,7 @@ a {
   .nav {
     transform: translateX(-100vw);
     transition: transform 500ms;
+    border: none;
 
     .nav-brand {
       .nav-brand-img {
@@ -811,6 +852,7 @@ and (min-width : 326px) and (max-width: 481px) {
 @media (prefers-color-scheme: light) {
   .nav {
     background-color: $light_secondary;
+    border-right-color: rgba(160,160,160,0.3);
   }
 
   body {
@@ -827,7 +869,7 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .active_nav {
-    color: $light_accent2 !important;
+    color: $light_accent !important;
   }
 
   .box-badge {
@@ -840,7 +882,7 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .closeBtn > svg {
-    color: $light_accent2;
+    color: $light_accent;
   }
 
   .project {
@@ -848,7 +890,12 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .project-header {
-    color: $light_accent;
+    color: $light_accent2;
+  }
+
+  .project-badge {
+    color: $light_accent2;
+    border-color: $light_accent2;
   }
 
   .projects-button{
@@ -858,6 +905,11 @@ and (min-width : 326px) and (max-width: 481px) {
 
   .project-page-header {
     color: $light_accent;
+  }
+
+  .project-page-badge {
+    color: $light_accent;
+    border-color: $light_accent;
   }
 
   .title {
@@ -872,6 +924,7 @@ and (min-width : 326px) and (max-width: 481px) {
   
   .nav {
     background-color: $dark_secondary;
+    border-right-color: rgba(67,67,67,0.3);
   }
 
   body {
@@ -909,6 +962,11 @@ and (min-width : 326px) and (max-width: 481px) {
     // background-color: $dark_secondary;
   }
 
+  .project-badge {
+    color: $dark_accent;
+    border-color: $dark_accent;
+  }
+
   .project-header {
     color: $dark_accent;
   }
@@ -920,6 +978,11 @@ and (min-width : 326px) and (max-width: 481px) {
 
   .project-page-header {
     color: $dark_accent;
+  }
+
+  .project-page-badge {
+    color: $dark_accent;
+    border-color: $dark_accent;
   }
 
   .title {

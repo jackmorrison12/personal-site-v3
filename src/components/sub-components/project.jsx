@@ -25,7 +25,7 @@ class Project extends Component {
                                                         this.props.data.tech.map(tech => {
                                                             return (
                                                                 <div className="box-badge-wrapper">
-                                                                    <div className="box-badge">
+                                                                    <div className="project-badge">
                                                                         {tech}
                                                                     </div>
                                                                 </div>
