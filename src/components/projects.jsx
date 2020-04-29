@@ -30,7 +30,7 @@ class Projects extends Component {
                         })
                     }
                 </div>
-                <button className="projects-button" onClick={() => this.setState({showAllProj : !this.state.showAllProj})}>{this.state.showAllProj ? "Show Fewer Projects" : "Load More Projects"}</button>
+                <button className="projects-button" onClick={() => this.setState({showAllProj : !this.state.showAllProj})}>{this.state.showAllProj ? "Close project archive" : "Open project archive"}</button>
             </Fragment>
         );
       }

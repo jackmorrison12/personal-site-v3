@@ -94,7 +94,7 @@
 		]
 	},
 	{	"name": "Music Technology",
-		"hidden": false,
+		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["Cubase", "Logic"],
 		"url": "musictech",
@@ -135,7 +135,7 @@
 		]
 	},
 	{	"name": "Python Teaching Project",
-		"hidden": false,
+		"hidden": true,
 		"type": "Uni Project",
 		"tech" : ["Python", "Teaching"],
 		"url": "python",
@@ -238,6 +238,34 @@
 			"cas-5.png"
 		]
 	}, 
+	{	"name": "WACC",
+		"hidden": true,
+		"type": "Uni Project",
+		"tech" : ["Kotlin", "ANTLR"],
+		"url": "wacc",
+		"dates": "January 2019 - March 2019",
+		"short_desc": "A compiler created for our own programming language",
+		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
+	},
+	{	"name": "Pintos",
+		
+		"hidden": true,
+		"type": "Uni Project",
+		"tech" : ["C"],
+		"url": "pintos",
+		"dates": "October 2018 - December 2018",
+		"short_desc": "An Operating System we helped complete",
+		"long_desc": "This was our 2nd year operating systems project, where the task was to implement different parts of an operating system, including scheduling, user programs and virtual memory. This project was written entirely in C.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
+	},
+	{	"name": "ARM11 Emulator and Assembler",
+		"hidden": true,
+		"type": "Uni Project",
+		"tech" : ["C"],
+		"url": "arm11",
+		"dates": "May 2018 - June 2018",
+		"short_desc": "An ARM11 Emulator and Assembler",
+		"long_desc": "This project was completed in the final term of my first year undergraduate studies. It entailed creating an ARM11 Emulator and Assembler in C, then using these in combination with a Raspberry Pi to control an LED.\nUnfortunately the code for the emulator and assembler cannot be shared here as the task will be reused in future years."
+	},
 	{	"name": "PyPlay",
 		"hidden": true,
 		"type": "Hackathon",
@@ -286,24 +314,6 @@
 			"monzo-receipts.png"
 		]
 	},
-	{	"name": "WACC",
-		"hidden": true,
-		"type": "Uni Project",
-		"tech" : ["Kotlin", "ANTLR"],
-		"url": "wacc",
-		"dates": "January 2019 - March 2019",
-		"short_desc": "A compiler created for our own programming language",
-		"long_desc": "This is our second year compilers project, where we are creating a compiler for a programming language. We wrote the compiler in Kotlin.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
-	},
-	{	"name": "Pintos",
-		"hidden": true,
-		"type": "Uni Project",
-		"tech" : ["C"],
-		"url": "pintos",
-		"dates": "October 2018 - December 2018",
-		"short_desc": "An Operating System we helped complete",
-		"long_desc": "This was our 2nd year operating systems project, where the task was to implement different parts of an operating system, including scheduling, user programs and virtual memory. This project was written entirely in C.\nUnfortunately, the code for this project cannot be shared, as the task will be reused in future years."
-	},
 	{	"name": "MentorMe",
 		"hidden": true,
 		"type": "External Project",
@@ -318,15 +328,6 @@
 				"url": "https://github.com/HashimR/mentorme"
 			}
 		]
-	},
-	{	"name": "ARM11 Emulator and Assembler",
-		"hidden": true,
-		"type": "Uni Project",
-		"tech" : ["C"],
-		"url": "arm11",
-		"dates": "May 2018 - June 2018",
-		"short_desc": "An ARM11 Emulator and Assembler",
-		"long_desc": "This project was completed in the final term of my first year undergraduate studies. It entailed creating an ARM11 Emulator and Assembler in C, then using these in combination with a Raspberry Pi to control an LED.\nUnfortunately the code for the emulator and assembler cannot be shared here as the task will be reused in future years."
 	},
 	{	"name": "To What Extent are Computer-Assisted Proofs Valid?",
 		"hidden": true,
