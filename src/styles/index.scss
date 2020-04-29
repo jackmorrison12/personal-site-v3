@@ -7,6 +7,7 @@ $light_secondary: #F1F3F4;
 $light_accent: white;
 $light_accent2: #6db6ff;
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -374,7 +375,7 @@ a {
 
 .project-page-layout {
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
 }
 
 .project-page-media-container {
@@ -435,9 +436,44 @@ a {
 }
 
 .project-page-table {
-  flex: 60%;
+  flex: 100%;
   padding-top: 10px;
 }
+
+.project-page-table-desktop {
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.project-page-table-header {
+  font-size: 14px;
+}
+
+.project-page-table-desktop tr:nth-child(even) {background-color: #090A0F59;}
+
+.project-page-table-empty {
+  background: repeating-linear-gradient(
+      45deg,
+      #090A0F59,
+      #090A0F59 10px,
+      transparent 10px,
+      transparent 20px
+    );
+}
+
+.project-page-table-desktop th {
+  background-color: black;
+  color: white;
+}
+
+
+.project-page-table-desktop th, td {
+  padding: 5px;
+}
+
+.project-page-table-mobile {display: none;}
+
 
 /* 404 Page CSS */
 
@@ -736,6 +772,22 @@ and (min-width : 326px) and (max-width: 481px) {
     flex-direction: column;
   }
 
+  .project-page-table-desktop {display: none;}
+  .project-page-table-mobile {
+    display: inherit;
+    text-align: center;
+  }
+
+  .project-page-table-mobile h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project-page-table-mobile-icon {
+    margin-top: 10px
+  }
+  
+
   /* 404 Page CSS */
   
   .error-image {
@@ -868,3 +920,4 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
 }
+
