@@ -45,7 +45,7 @@ class Box extends Component {
                                     this.props.data.commendations.map(commendation => {
                                         return(
                                             <div class="box-awards">
-                                                <i class="fas fa-trophy"></i> 
+                                                <i class="fas fa-trophy accent-colour"></i> 
                                                 <span> {commendation.name} - <i>{commendation.awarder}, {commendation.date}</i></span>
                                             </div>
                                         );
@@ -58,7 +58,7 @@ class Box extends Component {
                                     this.props.data.highlights.map(highlight => {
                                         return(
                                             <div class="box-awards">
-                                                <i class="fas fa-star"></i> 
+                                                <i class="fas fa-star accent-colour"></i> 
                                                 <span> {highlight.name} {highlight.score ?  "-"  : ""} <i>{highlight.score}</i></span>
                                             </div>
                                         );

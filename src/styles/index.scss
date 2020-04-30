@@ -923,6 +923,10 @@ and (min-width : 326px) and (max-width: 481px) {
   .title {
     color: $light_accent;
   }
+
+  .accent-colour {
+    color: $light_accent;
+  }
   
 } 
 
@@ -994,6 +998,10 @@ and (min-width : 326px) and (max-width: 481px) {
   }
 
   .title {
+    color: $dark_accent;
+  }
+
+  .accent-colour {
     color: $dark_accent;
   }
 
