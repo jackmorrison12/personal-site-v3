@@ -64,7 +64,7 @@ export default function Navbar() {
             {
                 data.map(item => {
                 return (
-                    <a><NavLink exact to={item.link} activeClassName="active_nav" onClick={() => {if (navOpen) setNavOpen(!navOpen)}} >{item.name} </NavLink></a>
+                    <NavLink exact to={item.link} activeClassName="active_nav" onClick={() => {if (navOpen) setNavOpen(!navOpen)}} >{item.name} </NavLink>
                 );
                 }) 
             }

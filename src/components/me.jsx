@@ -17,7 +17,7 @@ import {GitHubData as Watchers} from './sub-components/github/github-watchers';
 
 import TextLoop from "react-text-loop";
 
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 import titles from "../data/titles.json"
 

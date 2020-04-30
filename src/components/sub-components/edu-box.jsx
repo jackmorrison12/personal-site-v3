@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 class Box extends Component {
     render() {

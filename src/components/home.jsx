@@ -1,9 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/home.scss"
 
-import styled from "styled-components";
-
-
 import data from "../data/socials.json";
 
 import TextLoop from "react-text-loop";
