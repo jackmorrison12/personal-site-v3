@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jackmorrison12.github.io/personal-website",
+  "homepage": "http://jackmorrison.xyz",
   "dependencies": {
     "@amcharts/amcharts4": "^4.9.16",
     "@amcharts/amcharts4-geodata": "^4.1.14",
