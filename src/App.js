@@ -6,7 +6,7 @@ import GlobalStyle from './styles/global';
 import ScrollToTop from 'react-router-scroll-top'
 
 
-import { HashRouter, Route, Switch, Redirect} from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 
 import data from "./data/navigation.json";
 import projects from "./data/projects.json";
@@ -38,7 +38,7 @@ class App extends Component {
     const pages = [Home, CV, Experience, Education, Projects, Me];
     return(
       <div class="layout">
-      <HashRouter basename='/'>
+      <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
         <ScrollToTop/>
         <Navbar />
         <div className="main">
@@ -77,7 +77,7 @@ class App extends Component {
                 <Route component={ErrorPage} />
           </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
       <GlobalStyle />
    </div>
    
