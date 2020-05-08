@@ -48,7 +48,7 @@ class ProjectTable extends Component {
                                 {item.notebook ? <><p><a href ={item.notebook}>Jupyter Notebook</a></p></> : ""}
                                 {item.leaderboard ? <><p><a href ={item.leaderboard}>Leaderboard</a></p></> : ""}
                                 {item.kahoot ? <><p><a href ={item.kahoot}>Kahoot</a></p></> : ""}
-                                <p></p><a href ={item.github} className="icon"><i class="fa fa-github fa-2x icon-3d-10 icon-3d-dark project-page-table-mobile-icon"></i></a>    
+                                <p></p><a href ={item.github} className="icon"><i class="fab fa-github fa-2x icon-3d-10 icon-3d-dark project-page-table-mobile-icon"></i></a>    
                             </>                                   
                             );
                     })}
