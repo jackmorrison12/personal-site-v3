@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jackmorrison.xyz",
+  "homepage": "https://v3.jackmorrison.xyz",
   "dependencies": {
     "@amcharts/amcharts4": "^4.9.16",
     "@amcharts/amcharts4-geodata": "^4.1.14",
