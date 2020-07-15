@@ -20,7 +20,7 @@ const Home = (props) => {
           <p>I'm currently studying Computing at Imperial College London. </p>
           <p>Look around here to get to know a bit more about me!</p>
           <p>
-            PLEASE NOTE: This is an archived version of
+            PLEASE NOTE: This is an archived version of {" "}
             <a href="https://jackmorrison.xyz">jackmorrison.xyz</a>
           </p>
         </div>
